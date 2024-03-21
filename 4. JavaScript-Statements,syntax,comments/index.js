@@ -36,12 +36,19 @@ document.getElementById("demoo").innerHTML = "Hello Dolly.";
 
 // Variable values are called Variables.
 
-
+// more theory from w3school
 
 // ----------------------------------------------------------------
 
 
 // *************************JS comments****************************
 
+// Single line Comment
+
+/*
+multiline Comment
+multiline Comment
+multiline Comment
+*/
 
 // ----------------------------------------------------------------
