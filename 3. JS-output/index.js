@@ -10,10 +10,7 @@
 // Writing into an alert box, using window.alert().
 // Writing into the browser console, using console.log().
 
+console.log(5 + 6);
+
 // -------------------------MORE FROM W3SCHOOL------------------------------
-
-// ----------------------------------------------------------------
-
-
-// *************************JS Syntax****************************
 
