@@ -3,7 +3,7 @@
 
 - "In this setup, I'm going to practice JavaScript in detail."
 - Introduction of JavaScript
-- Js syntax , comments , how to write
+- JavaScript how to write , output, statements, syntax , comments.
 - JavaScript
 -
 -
