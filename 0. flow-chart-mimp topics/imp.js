@@ -3,7 +3,7 @@
 @ Variables and Data Types:
 Understand how to declare variables, work with different data types such as numbers, strings, booleans, arrays, and objects.
 
-@ Operators and Expressions:
+Operators and Expressions:
 Learn about arithmetic, assignment, comparison, logical, and bitwise operators. Understand how to use them in expressions.
 
 Control Flow:
