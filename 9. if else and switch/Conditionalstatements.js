@@ -12,7 +12,7 @@
 // Use else if to specify a new condition to test, if the first condition is false
 // Use switch to specify many alternative blocks of code to be executed
 
-
+// ================================================================
 
 // __________-The if Statement-_________
 // Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
@@ -32,6 +32,7 @@ let age = 18;
 if (age >= 18) {
     console.log("You are eligible to vote.");
 }
+// ================================================================
 
 // _________ if else statement_________
 
@@ -52,6 +53,7 @@ if (agee >= 18) {
 } else {
     console.log("You are not eligible to vote yet.");
 }
+// ================================================================
 
 // _________ if else if else statement_________
 
@@ -83,3 +85,5 @@ if (price < 10) {
 } else {
     console.log("This product is in the 'High Cost' category.");
 }
+
+// ================================================================
