@@ -92,7 +92,39 @@ function greet() {
 
 // Date object:
 
-const date = new Date("2022-03-25");
+const date = new Date("2024-03-22");
+console.log( date);
+
+//  ----------------------------------------------------------------
+
+// The typeof Operator
+
+// You can use the JavaScript typeof operator to find the type of a JavaScript variable.
+
+// The typeof operator returns the type of a variable or an expression:
+let num = 10;
+console.log(typeof num); // Outputs: "number"
+
+let str = "Hello";
+console.log(typeof str); // Outputs: "string"
+
+let bool = true;
+console.log(typeof bool); // Outputs: "boolean"
+
+let obj = { name: "John" };
+console.log(typeof obj); // Outputs: "object"
+
+let arr = [1, 2, 3];
+console.log(typeof arr); // Outputs: "object"
+
+let func = function() {};
+console.log(typeof func); // Outputs: "function"
+
+let undef;
+console.log(typeof undef); // Outputs: "undefined"
+
+let nul = null;
+console.log(typeof nul); //
 
 /*
 Primitive Data Types:
