@@ -82,10 +82,9 @@ for (let color of colors) {
     console.log(color);
 }
 
-// while Loop:
+let h = "helloworld";
+for (const i of h) {
+    console.log(i);
+}
 
-// let i = 0;
-// while (i < 10) {
-//     console.log(i);
-//     i++;
-// }
+// ================================================================
