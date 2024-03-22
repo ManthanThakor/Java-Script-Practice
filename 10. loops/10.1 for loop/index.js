@@ -60,6 +60,13 @@ console.log("loop finished");
 
 //_____________________________for in and for of___________________________________
 
+//for...in:
+// The for...in loop is used to iterate over the properties of an object. It enumerates all enumerable properties of an object, including properties inherited from its prototype chain.
+
+
+// The For In Loop
+// The JavaScript for in statement loops through the properties of an Object:
+
 
 
 // while Loop:
