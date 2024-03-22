@@ -1,10 +1,5 @@
-//______________- while Loop:_____________--
 
-// let idex=10;
-// while (idex>1) {
-//     console.log(idex);
-//     idex--;
-// }
+// guessing the number game 
 
 let gameNum = 25;
 let userNum = parseInt(prompt("Guess the game number: "));
@@ -15,8 +10,3 @@ while (userNum !== gameNum) {
 
 console.log("Congratulations! You entered the correct game number.");
 
-// let i = 0;
-// while (i < 10) {
-//     console.log(i);
-//     i++;
-// }
