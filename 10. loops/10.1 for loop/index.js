@@ -40,7 +40,7 @@ for (let i = 0; i < fruits.length; i++) {
 
 let sum = 0;
 let n = 100;
-for (let i = 0; i <=n; i++) {
+for (let i = 0; i <= n; i++) {
     sum += i;
 }
 console.log(`sum of all number is ${sum}`);
@@ -60,14 +60,27 @@ console.log("loop finished");
 
 //_____________________________for in and for of___________________________________
 
-//for...in:
+//___________________for...in________________________________
 // The for...in loop is used to iterate over the properties of an object. It enumerates all enumerable properties of an object, including properties inherited from its prototype chain.
 
+const person = {
+    name: 'John',
+    age: 30,
+    gender: 'male'
+};
 
-// The For In Loop
-// The JavaScript for in statement loops through the properties of an Object:
+for (let key in person) {
+    console.log(key + ': ' + person[key]);
+}
 
+//   ___________for...of_____________
+//   The for...of loop is used to iterate over the elements of an iterable object, such as arrays, strings, or other iterable objects (e.g., Map, Set).
 
+const colors = ['red', 'green', 'blue'];
+
+for (let color of colors) {
+    console.log(color);
+}
 
 // while Loop:
 
