@@ -84,8 +84,8 @@ for (let color of colors) {
 
 // while Loop:
 
-let i = 0;
-while (i < 10) {
-    console.log(i);
-    i++;
-}
+// let i = 0;
+// while (i < 10) {
+//     console.log(i);
+//     i++;
+// }
