@@ -168,3 +168,31 @@ console.log(paaddedStar,"\n"); // Output: "Hello12312"
 let xtr = "Hello";
 let repeatedStr = xtr.repeat(3);
 console.log(repeatedStr,"\n"); // Output: "HelloHelloHello"
+
+// // ___________________________________
+
+// startsWith(prefix):
+
+// Returns true if a string starts with the specified prefix, otherwise false.
+
+let sa = "Hello, world!";
+console.log(sa.startsWith("Hello")); // Outputs: true
+
+// endsWith(suffix):
+// Returns true if a string ends with the specified suffix, otherwise false.
+
+let stzr = "Hello, world!";
+console.log(stzr.endsWith("world!")); // Outputs: true
+
+// indexOf(substring):
+
+// Returns the index of the first occurrence of a substring in a string, or -1 if the substring is not found.
+
+let stAr = "JavaScript";
+console.log(stAr.indexOf("Script")); // Outputs: 4
+
+// includes(substring):
+// Returns true if a string contains a specified substring, otherwise false.
+
+let stSr = "JavaScript";
+console.log(stSr.includes("Script")); // Outputs: true
