@@ -108,3 +108,63 @@ console.log(substr1,"\n"); // Output: "World"
 let stsr = "Hello, World!";
 let substr2 = stsr.substr(7, 6); // Extracts 5 characters starting from index 7
 console.log(substr2,"\n"); // Output: "World"
+
+// ___________________________________
+
+// replace(searchValue, replaceValue):
+// Searches a string for a specified value or regular expression and replaces it with another value.
+
+let sastr = "Hello, A!";
+console.log(sastr.replace("A", "ROCK"),"\n"); // Outputs: "Hello, ROCK!"
+
+// String ReplaceAll()
+// The replaceAll() method allows you to specify a regular expression instead of a string to be replaced.
+// If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.
+// replaceAll() does not work in Internet Explorer.
+let text = "I love cats. Cats are very easy to love. Cats are very popular."
+text = text.replaceAll("Cats","Dogs");
+text = text.replaceAll("cats","dogs");
+console.log(text,"\n"); // Outputs: "I love dogs. Dogs are very easy to love. Dogs are very popular."
+
+
+// ************************************************************EXTRA*********************************************************************************************************************************************************************************************************************
+
+// ___________________________________
+
+// JavaScript String split()
+// A string can be converted to an array with the split() method:
+
+let stru = "apple,banana,orange";
+let fruits = stru.split(",");
+console.log(fruits,"\n"); // Outputs: ["apple", "banana", "orange"]
+
+// ___________________________________
+
+// String.padStart(maxLength, [padString])
+// The padStart() method pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.
+// It adds characters at the beginning of the string until the resulting string reaches the specified length (maxLength).
+// The padString parameter is optional and specifies the string to pad with. If not provided, it pads with spaces.
+
+let star = "Hello";
+let paddedStr = star.padStart(10, "123");
+console.log(paddedStr,"\n"); // Output: "123123Hello"
+
+
+// String.padEnd(maxLength, [padString])
+// The padEnd() method pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.
+// It adds characters at the end of the string until the resulting string reaches the specified length (maxLength).
+// The padString parameter is optional and specifies the string to pad with. If not provided, it pads with spaces.
+
+let strasq = "Hello";
+let paaddedStar = strasq.padEnd(10, "123");
+console.log(paaddedStar,"\n"); // Output: "Hello12312"
+
+// ___________________________________
+
+// String.repeat(count):
+// The repeat() method constructs and returns a new string that contains the specified number of copies of the string on which it was called.
+// It concatenates the specified number of copies of the string together and returns the result.
+
+let xtr = "Hello";
+let repeatedStr = xtr.repeat(3);
+console.log(repeatedStr,"\n"); // Output: "HelloHelloHello"
