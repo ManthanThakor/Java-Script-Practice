@@ -62,8 +62,11 @@ console.log(strrr,"\n"); // Outputs: This is a "quote" inside a string.
 
 // String Interpolation (Template Literals):
 
+// A way to have embedded expressions in strings
 console.log(`this is a template literal`,"\n");
 
+// __String Interpolation__
+// To create strings by doing substitution of placeholders
 let namee = "John";
 let greeting = `Hello, ${namee}!`;
 console.log(greeting ,"\n"); // Outputs: Hello, John!
