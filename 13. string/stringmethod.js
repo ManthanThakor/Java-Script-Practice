@@ -55,3 +55,29 @@ let texts1 = "Hello";
 let texts2 = "World!";
 let texts3 = texts1.concat(" ",texts2);
 console.log(texts3,"\n"); // Outputs: "Hello World!"
+
+// ___________________________________
+
+// There are 3 methods for extracting a part of a string:
+// slice(start, end)
+// substring(start, end)
+// substr(start, length)
+
+// slice():
+
+let str1 = "Hello, world!";
+console.log(str1.slice(0,10),"\n"); // Outputs: "Hello, world!"
+
+let textxx = "Apple, Banana, Kiwi";
+let part = textxx.slice(7,13);
+
+console.log(part,"\n"); // Outputs: "Kiwi"
+// substring():
+
+let str2 = "Hello, world!";
+console.log(str2.substring(0,10),"\n"); // Outputs: "Hello, world!"
+
+// substr():
+
+let str3 = "Hello, world!";
+console.log(str3.substr(0,10),"\n"); // Outputs: "Hello, world!"
