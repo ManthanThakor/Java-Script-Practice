@@ -62,6 +62,18 @@ console.log(strrr,"\n"); // Outputs: This is a "quote" inside a string.
 
 // String Interpolation (Template Literals):
 
+console.log(`this is a template literal`,"\n");
+
 let namee = "John";
 let greeting = `Hello, ${namee}!`;
 console.log(greeting ,"\n"); // Outputs: Hello, John!
+
+let expression = "i am don";
+let expressionone = "hi,"
+console.log(`${expressionone} ${expression}, stay at home`,"\n");
+
+// Comparing Strings:
+
+let str1 = "apple";
+let str2 = "banana";
+console.log(str1 === str2,"\n"); // Outputs: false
