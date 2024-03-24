@@ -70,14 +70,41 @@ console.log(str1.slice(0,10),"\n"); // Outputs: "Hello, world!"
 
 let textxx = "Apple, Banana, Kiwi";
 let part = textxx.slice(7,13);
+console.log(part,"\n"); // Outputs: "Banana"
 
-console.log(part,"\n"); // Outputs: "Kiwi"
-// substring():
+// If you omit the second parameter, the method will slice out the rest of the string
+let texst = "Apple, Banana, Kiwi";
+let pat = texst.slice(7);
+console.log(pat,"\n"); // Outputs: "Banana, Kiwi"
 
-let str2 = "Hello, world!";
-console.log(str2.substring(0,10),"\n"); // Outputs: "Hello, world!"
+// If a parameter is negative, the position is counted from the end of the string:
 
-// substr():
+let texat = "Apple, Banana, Kiwi";
+let parrt = texat.slice(-12);
+console.log(parrt,"\n"); // Outputs: "Banana, Kiwi"
 
-let str3 = "Hello, world!";
-console.log(str3.substr(0,10),"\n"); // Outputs: "Hello, world!"
+// This example slices out a portion of a string from position -12 to position -6:
+
+let texxt = "Apple, Banana, Kiwi";
+let parrrt = texxt.slice(-13, -6);
+console.log(parrrt,"\n"); // Outputs: " Banana"
+
+// substring(start, end):
+// The substring() method extracts characters from a string between two specified indices (start and end).
+// It returns a new string containing the extracted characters.
+// If the start index is greater than the end index, substring() will swap the two indices.
+// If either index is negative or greater than the string's length, substring() will treat it as if it were 0.
+
+let stras = "Hello, World!";
+let substr1 = stras.substring(7, 11); // Extracts characters from index 7 to 11
+console.log(substr1,"\n"); // Output: "World"
+
+// substr(start, length):
+// The substr() method extracts a specified number of characters from a string, starting from a specified index.
+// It returns a new string containing the extracted characters.
+// The start parameter specifies the starting index from which to begin extraction.
+// The length parameter specifies the number of characters to extract. If omitted, substr() extracts characters to the end of the string.
+
+let stsr = "Hello, World!";
+let substr2 = stsr.substr(7, 6); // Extracts 5 characters starting from index 7
+console.log(substr2,"\n"); // Output: "World"
