@@ -196,3 +196,4 @@ console.log(stAr.indexOf("Script")); // Outputs: 4
 
 let stSr = "JavaScript";
 console.log(stSr.includes("Script")); // Outputs: true
+
