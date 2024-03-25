@@ -45,14 +45,8 @@ const persona = {
   console.log(persona["age"]); // Output: 50
   console.log(persona["eyeColor"]); // Output: "blue"
   console.log(persona.hasOwnProperty("firstName")); // Output: true
-  console.log(persona.hasOwnProperty("lastName")); // Output: true
-  console.log(persona.hasOwnProperty("age")); // Output: true
-  console.log(persona.hasOwnProperty("eyeColor")); // Output: true
   console.log(persona.isPrototypeOf(persona)); // Output: true
   console.log(persona.propertyIsEnumerable("firstName")); // Output: true
-  console.log(persona.propertyIsEnumerable("lastName")); // Output: true
-  console.log(persona.propertyIsEnumerable("age")); // Output: true
-  console.log(persona.propertyIsEnumerable("eyeColor")); // Output: true
   console.log(persona.toString()); // Output: "[object Object]"
 
 // __________________________Object Methods______________________________________
@@ -90,3 +84,15 @@ const peArson = {
 // In an event, this refers to the element that received the event.
 // Methods like call(), apply(), and bind() can refer this to any object.
 
+
+
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& DANGER &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+/* Do Not Declare Strings, Numbers, and Booleans as Objects!
+When a JavaScript variable is declared with the keyword "new", the variable is created as an object:
+
+x = new String();        // Declares x as a String object
+y = new Number();        // Declares y as a Number object
+z = new Boolean();       // Declares z as a Boolean object
+Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed*/
