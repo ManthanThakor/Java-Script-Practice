@@ -2,6 +2,12 @@
 
 // ________________________________________________OBJECT________________________________________________________________
 
+// JavaScript Objects
+// You have already learned that JavaScript variables are containers for data values.
+// The values are written as name:value pairs (name and value separated by a colon).
+// It is a common practice to declare objects with the const keyword.
+
+
 let person = {
     name: "ROCK",
     age: 30,
