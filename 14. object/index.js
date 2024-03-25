@@ -22,6 +22,7 @@ let person = {
 };
 
 // Accessing properties of the object
+console.log(person); // { name: 'ROCK', age: 30,  isStudent: false, address: { city: 'New York', country: 'USA' },  sayHello: [Function: sayHello]  }
 console.log(person.name); // Output: "rock"
 console.log(person.age); // Output: 30
 console.log(person.address.city); // Output: "New York"
