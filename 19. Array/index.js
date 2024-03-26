@@ -38,3 +38,10 @@ const carss = [
 
 console.log(carss);
 
+let info = [ "rahul" ,86, "Delhi" ];
+
+console.log(info);
+
+let numbers = new Array(1, 2, 3, 4, 5);
+
+console.log(numbers);
