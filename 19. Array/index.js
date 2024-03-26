@@ -8,6 +8,12 @@ An array is a special variable, which can hold more than one value:*/
 const cars = ["Saab", "Volvo", "BMW"];
 console.log(cars);
 
+let bomb = [ 1 , 1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(bomb);
+
+let info = [ "rahul" ,86, "Delhi" ];
+console.log(info);
+
 /* Why Use Arrays?
 If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:
 
@@ -35,13 +41,17 @@ const carss = [
   "audi",
   "neno"
 ];
-
 console.log(carss);
 
-let info = [ "rahul" ,86, "Delhi" ];
 
-console.log(info);
 
-let numbers = new Array(1, 2, 3, 4, 5);
-
+let numbers = [ "1", "2", "3", "42", "5"];
+ numbers = new Array(1, 2, 3, 4, 5);
 console.log(numbers);
+
+
+
+// const caars = [];
+// cars[0]= "Saab";
+// cars[1]= "Volvo";
+// cars[2]= "BMW";
