@@ -153,7 +153,6 @@ console.log(arrAAay); // Output: [1, 2, 1, 2, 3]
 
 // Array.flat()
 // Array.flat(): Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
-
 const arraAAy = [1, [2, 3], [4, [5, 6]]];
 const flatArray = arraAAy.flat(2);
 console.log(flatArray); // Output: [1, 2, 3, 4, 5, 6]
@@ -163,3 +162,14 @@ console.log(flatArray); // Output: [1, 2, 3, 4, 5, 6]
 // The copyWithin() method overwrites the existing values.
 // The copyWithin() method does not add items to the array.
 // The copyWithin() method does not change the length of the array.
+
+
+// Array.slice()
+
+// SYNTAX : array.slice(start, end)
+
+const arraAya = [1, 2, 3, 4, 5];
+console.log(arraAya.slice(0, 3)); // Output: [1, 2, 3]
+console.log(arraAya.slice(1, 4)); // Output: [2, 3, 4]
+console.log(arraAya.slice(2, 5)); // Output: [3, 4, 5]
+console.log(arraAya.slice(3, 6)); // Output: [4, 5]
