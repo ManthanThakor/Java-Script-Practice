@@ -114,3 +114,13 @@ const arraya = [2, 3];
 const newLength = arraya.unshift(1);
 console.log(newLength); // Output: 3
 console.log(arraya); // Output: [1, 2, 3]
+
+
+//  Array delete()
+// JavaScript Array delete()
+// Warning !
+// Using delete() leaves undefined holes in the array.
+// Use pop() or shift() instead.
+const fruitsa = ["Banana", "Orange", "Apple", "Mango"];
+delete fruitsa[0];
+console.log(fruitsa,"\n"); // Output: ["Orange", "Apple", "Mango"]
