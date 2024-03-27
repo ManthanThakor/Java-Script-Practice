@@ -37,7 +37,18 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let size = fruits.length;
 console.log(size,"\n"); // Output: 4
 
+// JavaScript Array toString()
+// The JavaScript method toString() converts an array to a string of (comma separated) array values.
+
+const frAuits = ["Banana", "Orange", "Apple", "Mango"];
+let aaa = frAuits.toString();
+console.log(aaa,"\n"); // Output: "Banana,Orange,Apple,Mango"
 
 
+// JavaScript Array at()
+// ES2022 intoduced the array method at():
+// Get the third element of fruits using at():
 
-
+const fruiats = ["Banana", "Orange", "Apple", "Mango"];
+let fruiaaat = fruiats.at(2);
+console.log(fruiaaat,"\n"); // Output: "Apple"
