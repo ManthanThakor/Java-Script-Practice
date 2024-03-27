@@ -165,6 +165,9 @@ console.log(flatArray); // Output: [1, 2, 3, 4, 5, 6]
 
 
 // Array.slice()
+// Splicing and Slicing Arrays
+// The splice() method adds new items to an array.
+// The slice() method slices out a piece of an array.
 
 // SYNTAX : array.slice(start, end)
 
@@ -173,3 +176,48 @@ console.log(arraAya.slice(0, 3)); // Output: [1, 2, 3]
 console.log(arraAya.slice(1, 4)); // Output: [2, 3, 4]
 console.log(arraAya.slice(2, 5)); // Output: [3, 4, 5]
 console.log(arraAya.slice(3, 6)); // Output: [4, 5]
+
+const fraauits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fraauits.slice(1);
+console.log(citrus,"\n"); // Output: ["Orange", "Lemon", "Apple", "Mango"]
+
+// JavaScript Array toSpliced()
+// ES2023 added the Array toSpliced() method as a safe way to splice an array without altering the original array.
+// The difference between the new toSpliced() method and the old splice() method is that the new method creates a new array, keeping the original array unchanged, while the old method altered the original array.
+
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const spliced = months.toSpliced(1, 3);
+console.log(spliced,"\n"); // Output: ["Jan"]
+
+
+
+
+// JavaScript Array splice()
+// The splice() method can be used to add new items to an array:
+// Splice( ) : change original array (add, remove, replace)
+
+const arraay = [1, 2, 3, 4, 5];
+// Remove 2 elements starting from index 1 and insert 'a' and 'b' in their place
+const removedElements = arraay.splice(1, 2, 'a', 'b');
+console.log(arraay); // Output: [1, 'a', 'b', 4, 5]
+console.log(removedElements); // Output: [2, 3]
+
+// The first parameter (2) defines the position where new elements should be added (spliced in).
+// The second parameter (0) defines how many elements should be removed.
+// The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+// The splice() method returns an array with the deleted items:
+
+const fruitassss = ["sa", "Osemon", "Asspple", "Masngo"];
+fruitassss.splice(2, 0, "Kiwi"); 
+console.log(fruitassss,"\n"); // Output: [ 'sa', 'Osemon', 'Kiwi', 'Asspple', 'Masngo' ]
+// The splice() method can also be used to remove elements from an array:
+
+
+const fruits2 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+console.log(fruits2.splice(2, 1)); // Output: ["Orange", "Lemon", "Apple", "Mango"]
+console.log(fruits2,"\n"); // Output: ["Banana", "Orange", "Lemon", "Apple", "Mango"]
+// The splice() method can also be used to add new elements to an array:
+
+const fruitass = ["Banana", "Orange", "Apple", "Mango"];
+fruitass.splice(2, 2, "Lemon", "Kiwi");
+console.log(fruitass,"\n"); // Output: [ 'Banana', 'Orange', 'Lemon', 'Kiwi' ]
