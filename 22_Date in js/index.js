@@ -202,3 +202,63 @@ d24.toUTCString();
 const d25 = new Date();
 d25.toISOString();
  console.log(d25,"\n");
+
+
+
+//  extra
+
+/* Getting Date and Time Information:
+
+JavaScript Date objects have methods to retrieve various components of the date and time, such as getFullYear(), getMonth(), getDate(), getHours(), getMinutes(), getSeconds(), etc. */
+
+const now = new Date();
+console.log(now,"\n");
+const year = now.getFullYear();
+ console.log(year,"\n");
+const month = now.getMonth(); // January is 0, February is 1, and so on
+ console.log(month,"\n");
+const date = now.getDate();
+ console.log(date,"\n");
+const hours = now.getHours();
+ console.log(hours,"\n");
+const minutes = now.getMinutes();
+ console.log(minutes,"\n");
+const seconds = now.getSeconds();
+ console.log(seconds,"\n");
+
+ /* Setting Date and Time Information:
+
+Similarly, JavaScript Date objects have methods to set various components of the date and time, such as setFullYear(), setMonth(), setDate(), setHours(), setMinutes(), setSeconds(), etc. */
+
+const noww = new Date();
+noww.setFullYear(2023);
+noww.setMonth(11); // December
+noww.setDate(31);
+noww.setHours(23);
+noww.setMinutes(59);
+noww.setSeconds(59);
+ console.log(noww,"\n");
+
+//  Formatting Date and Time:
+// You can format date and time using methods like toLocaleDateString(), toLocaleTimeString(), toDateString(), toTimeString(), etc.
+
+const nowww = new Date();
+const dateString = nowww.toLocaleDateString(); // Format: MM/DD/YYYY
+const timeString = nowww.toLocaleTimeString(); // Format: HH:MM:SS AM/PM
+
+console.log(dateString + " " + timeString,"\n");
+/* 
+Working with Timestamps:
+You can get the number of milliseconds since the Unix Epoch (January 1, 1970) using the getTime() method, and vice versa, you can create a Date object from a timestamp using new Date(timestamp). */
+
+const timestamp = Date.now(); // Current timestamp
+const dateFromTimestamp = new Date(timestamp);
+console.log(timestamp,"\n");
+
+/* Manipulating Dates:
+JavaScript Date objects support various operations such as adding/subtracting days, months, years, hours, minutes, seconds, etc. */
+
+const nowa = new Date();
+now.setDate(nowa.getDate() + 7); // Add 7 days
+now.setMonth(nowa.getMonth() - 1); // Subtract 1 month
+ console.log(now,"\n");
