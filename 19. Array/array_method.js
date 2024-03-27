@@ -124,3 +124,42 @@ console.log(arraya); // Output: [1, 2, 3]
 const fruitsa = ["Banana", "Orange", "Apple", "Mango"];
 delete fruitsa[0];
 console.log(fruitsa,"\n"); // Output: ["Orange", "Apple", "Mango"]
+
+
+// Array copyWithin()
+// The copyWithin() method copies array elements to another position in an array:
+// Copy to index 2, all elements from index 0:
+
+// ++++++++++++++++ array.copyWithin(target, start, end) ++++++++++++++++
+
+const fruitsA = ["Banana", "Orange", "Apple", "Mango"];
+fruitsA.copyWithin(2, 0);
+console.log(fruitsA,"\n"); // Output: [ 'Banana', 'Orange', 'Banana', 'Orange' ]
+
+// Copy to index 2, the elements from index 0 to 2:
+
+const fruitsAA = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+fruitsAA.copyWithin(1, 2, 4);
+console.log(fruitsAA,"\n"); // Output:[ 'Banana', 'Banana', 'Orange', 'Apple', 'Mango' ]
+
+const arraAy = [1, 2, 3, 4, 5];
+arraAy.copyWithin(0, 3, 4); // Copies the element at index 3 to index 0
+console.log(arraAy); // Output: [4, 2, 3, 4, 5]
+
+const arrAAay = [1, 2, 3, 4, 5];
+// Copies the elements from index 0 to index 2 and pastes them starting at index 2
+arrAAay.copyWithin(2, 0, 3);
+console.log(arrAAay); // Output: [1, 2, 1, 2, 3]
+
+// Array.flat()
+// Array.flat(): Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+
+const arraAAy = [1, [2, 3], [4, [5, 6]]];
+const flatArray = arraAAy.flat(2);
+console.log(flatArray); // Output: [1, 2, 3, 4, 5, 6]
+
+
+// Note
+// The copyWithin() method overwrites the existing values.
+// The copyWithin() method does not add items to the array.
+// The copyWithin() method does not change the length of the array.
