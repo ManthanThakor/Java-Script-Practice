@@ -36,7 +36,6 @@ const doubledArray = arrsy.map(function(element) {
 console.log(doubledArray); // Output: [2, 4, 6, 8, 10]
 
 
-
 // Array flatMap()
 
 // First maps each element using a mapping function, then flattens the result into a new array.
