@@ -95,3 +95,22 @@ let length = frauits.push("Kiwii");
 
 console.log(length,"\n"); // Output: 5
 console.log(frauits,"\n");
+
+
+// #################################################################################################
+
+// Array.shift()
+// Array.shift(): Removes the first element from an array and returns that removed element.
+
+const array = [1, 2, 3];
+const shiftedElement = array.shift();
+console.log(shiftedElement); // Output: 1
+console.log(array); // Output: [2, 3]
+
+// Array.unshift()
+// Array.unshift(): Adds one or more elements to the beginning of an array and returns the new length of the array.
+
+const arraya = [2, 3];
+const newLength = arraya.unshift(1);
+console.log(newLength); // Output: 3
+console.log(arraya); // Output: [1, 2, 3]
