@@ -42,7 +42,7 @@ let numm = [12 , 21, 12];
  let newnumm = numm.map((value) => {
  return value * 2;
 });
-console.log(newnumm);
+console.log(newnumm); //[ 24, 42, 24 ]
 
 
 // Filter
@@ -52,28 +52,23 @@ let arrr = [1, 2, 3, 4, 5, 6, 7];
 let evenarr = arrr.filter((value) =>{
  return value % 2 === 0;
 });
-console.log(evenarr);
+console.log(evenarr);//[ 2, 4, 6 ]
 
 
 // Reduce
 // Performs some operations & reduces the array to a single value. It returns
 // that single value.
 
+let arrrr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let sum = arrrr.reduce((results, current) => {
+ return results + current;
+});
+console.log(sum); // 55 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// // different between forEach , map and filter
+// // different between forEach , map and filter reduce
 
 // FOREACH : NORMAL CALCULATION OR print
 // MAP : value ko use karke new array banana
