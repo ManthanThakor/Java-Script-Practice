@@ -66,6 +66,15 @@ let sum = arrrr.reduce((results, current) => {
 });
 console.log(sum); // 55 
 
+//example largest num 
+
+let arrrrrr = [1, 2, 3, 4, 5, 6, 7, 80, 9, 10, 1 , 2, 3, 4, 5 ,];
+
+let max = arrrrrr.reduce((results, current) => {
+ return results > current? results : current;
+});
+console.log(max); // 80
+
 
 
 // // different between forEach , map and filter reduce
