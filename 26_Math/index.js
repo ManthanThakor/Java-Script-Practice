@@ -1,79 +1,78 @@
 
-Math.round():
+// Math.round():
 
-Rounds a number to the nearest integer.
-javascript
-Copy code
+// Rounds a number to the nearest integer.
+
 const roundedNumber = Math.round(4.6); // Output: 5
-Math.floor():
+console.log(roundedNumber);
 
+/* Math.floor():
 Returns the largest integer less than or equal to a given number.
-javascript
-Copy code
+ */
 const flooredNumber = Math.floor(4.6); // Output: 4
-Math.ceil():
+console.log(flooredNumber);
 
-Returns the smallest integer greater than or equal to a given number.
-javascript
-Copy code
+/* Math.ceil():
+Returns the smallest integer greater than or equal to a given number. */
+
 const ceiledNumber = Math.ceil(4.3); // Output: 5
-Math.random():
+console.log(ceiledNumber);
 
-Returns a random floating-point number between 0 (inclusive) and 1 (exclusive).
-javascript
-Copy code
+/* Math.random():
+Returns a random floating-point number between 0 (inclusive) and 1 (exclusive). */
+
 const randomNumber = Math.random(); // Output: a random number between 0 and 1
-Math.max():
+console.log(randomNumber);
 
-Returns the largest of zero or more numbers.
-javascript
-Copy code
+/* Math.max():
+Returns the largest of zero or more numbers. */
+
 const maxNumber = Math.max(10, 30, 20); // Output: 30
-Math.min():
+console.log(maxNumber);
 
-Returns the smallest of zero or more numbers.
-javascript
-Copy code
+/* Math.min():
+Returns the smallest of zero or more numbers. */
+
 const minNumber = Math.min(10, 30, 20); // Output: 10
+console.log(minNumber);
+/* 
 Math.pow():
+Returns the base to the exponent power. */
 
-Returns the base to the exponent power.
-javascript
-Copy code
 const powerResult = Math.pow(2, 3); // Output: 8 (2 raised to the power of 3)
-Math.sqrt():
+console.log(powerResult);
 
-Returns the square root of a number.
-javascript
-Copy code
+/* Math.sqrt():
+Returns the square root of a number. */
+
 const squareRoot = Math.sqrt(16); // Output: 4
-Math.abs():
 
-Returns the absolute value of a number.
-javascript
-Copy code
+/* Math.abs():
+Returns the absolute value of a number. */
+
 const absoluteValue = Math.abs(-5); // Output: 5
-Math.PI:
+console.log(absoluteValue)
 
+/* Math.PI:
 Represents the mathematical constant π (pi), which is approximately 3.14159.
-javascript
-Copy code
+ */
 const piValue = Math.PI; // Output: 3.141592653589793
-Math.E:
+console.log(piValue)
 
-Represents the mathematical constant e, which is approximately 2.718.
-javascript
-Copy code
+/* Math.E:
+Represents the mathematical constant e, which is approximately 2.718. */
+
 const eValue = Math.E; // Output: 2.718281828459045
-Math.log():
+console.log(eValue);
 
-Returns the natural logarithm (base e) of a number.
-javascript
-Copy code
+/* Math.log():
+Returns the natural logarithm (base e) of a number. */
+
 const naturalLog = Math.log(10); // Output: 2.302585092994046 (ln(10))
-Math.sin(), Math.cos(), Math.tan():
+console.log(naturalLog);
 
-Returns the sine, cosine, and tangent of an angle (specified in radians), respectively.
-javascript
-Copy code
+/* Math.sin(), Math.cos(), Math.tan():
+Returns the sine, cosine, and tangent of an angle (specified in radians), respectively. */
+
 const sinValue = Math.sin(Math.PI / 6); // Output: 0.5 (sin(π/6))
+console.log(sinValue);
