@@ -1,5 +1,6 @@
 
 
+// More about object and function
 
 // https://www.w3schools.com/js/js_object_definition.asp
 // JS Objects
