@@ -201,4 +201,33 @@ function myFunction() {
     const message = "Hello!";
     console.log(message); // Output: Hello!
 }
-console.log(message); // Error: message is not defined
+myFunction();  
+// console.log(message); // Error: message is not defined
+
+// =============================================
+
+/* 8. Function Hoisting:
+In JavaScript, function declarations are hoisted to the top of their scope, which means you can call a function before it's declared in the code.
+ */
+
+sayHello(); // Output: Hello!
+function sayHello() {
+    console.log("Hello!");
+}
+
+// =============================================
+
+// 9. Callback Functions:
+// A callback function is a function passed as an argument to another function and is executed later in the program's execution.
+
+
+function greet(callback) {
+
+    callback();
+}
+
+function sayHello() {
+    console.log("Hello!");
+}
+
+greet(sayHello); // Output: Hello!
