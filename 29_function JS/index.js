@@ -4,6 +4,11 @@ JavaScript functions are defined with the function keyword.
 You can use a function declaration or a function expression. */
 
 
+
+
+
+/* Functions in JavaScript are blocks of reusable code that perform a specific task. They allow you to encapsulate a piece of code and execute it whenever needed */
+
 /* 1. Function Declaration:
 You can declare a function in JavaScript using the function keyword followed by the function name and a pair of parentheses ( ). If the function takes parameters, you can list them inside the parentheses. The function body is enclosed in curly braces { }.
  */
@@ -13,6 +18,18 @@ function greett() {
 }
 // Calling the function
 greett(); // Output: Hello, world!
+
+
+// Onther example of a function declaration
+
+function wel(name) {
+    console.log("Hello, " + name + "!");
+    console.log("Welcome to Js PRACTICE");
+    console.log("we are learning js PRACTICE");
+    console.log("BEST OF LUCK" ,"\n");
+}
+wel("Manthan"); // Output:
+wel("ROCK"); // Output:
 
 
 /* 2. Function Parameters:
