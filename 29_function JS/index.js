@@ -220,14 +220,82 @@ function sayHello() {
 // 9. Callback Functions:
 // A callback function is a function passed as an argument to another function and is executed later in the program's execution.
 
-
-function greet(callback) {
-
-    callback();
+ // 9.1 passing function as an argument
+//  You can pass a function as an argument to another function just like you would with any other value.
+function doSomething(callback) {
+  // Perform some operation
+  console.log("Doing something...");
+  
+  // Invoke the callback function
+  callback();
 }
 
-function sayHello() {
-    console.log("Hello!");
+function callbackFunction() {
+  console.log("Callback function called!");
 }
 
-greet(sayHello); // Output: Hello!
+// Pass the callback function to doSomething
+doSomething(callbackFunction);
+
+// 9.2. Asynchronous Operations:
+// Callback functions are commonly used in asynchronous operations like setTimeout, setInterval, and making HTTP requests with XMLHttpRequest or fetch.
+// Using setTimeout with a callback function
+// setTimeout(function() {
+//   console.log("Timeout completed!");
+// }, 1000);
+
+// 9.3. Handling Events:
+// In web development, callback functions are often used to handle events such as button clicks, mouse movements, and keyboard inputs.
+
+// Adding an event listener with a callback function
+// document.getElementById("myButton").addEventListener("click", function() {
+//     console.log("Button clicked!");
+// });
+
+
+// 9.4. Closure and Scope:
+// Callback functions have access to the variables in their outer scope, forming closures. This allows callback functions to maintain access to the variables even after the outer function has finished executing.
+
+
+function outerFunction() {
+    const outerVariable = "Outer";
+
+    function innerFunction() {
+        console.log(outerVariable);
+    }
+
+    return innerFunction;
+}
+
+const callback = outerFunction();
+callback(); // Output: Outer
+
+// 9.5 Chaining Callbacks:
+// You can chain multiple callback functions together to perform a series of asynchronous operations sequentially.
+
+
+function step1(callback) {
+    setTimeout(function() {
+        console.log("Step 1 completed");
+        callback();
+    }, 1000);
+}
+
+function step2(callback) {
+    setTimeout(function() {
+        console.log("Step 2 completed");
+        callback();
+    }, 1000);
+}
+
+function step3() {
+    setTimeout(function() {
+        console.log("Step 3 completed");
+    }, 1000);
+}
+
+step1(function() {
+    step2(function() {
+        step3();
+    });
+});
