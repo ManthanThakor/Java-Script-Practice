@@ -29,16 +29,53 @@ let calcSquare = (num) => {
 };
 numq.forEach(calcSquare);
 
+
 // Some More Array Methods
+
 // Map
 // Creates a new array with the results of some operation. The value its callback returns are
 // used to form new array
 // arr.map( callbackFnx( value, index, array ) )
 
+let numm = [12 , 21, 12];
+
+ let newnumm = numm.map((value) => {
+ return value * 2;
+});
+console.log(newnumm);
+
+
 // Filter
 // Creates a new array of elements that give true for a condition/filter.
-// Eg: all even elements
+
+let arrr = [1, 2, 3, 4, 5, 6, 7];
+let evenarr = arrr.filter((value) =>{
+ return value % 2 === 0;
+});
+console.log(evenarr);
+
 
 // Reduce
 // Performs some operations & reduces the array to a single value. It returns
 // that single value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // different between forEach , map and filter
+
+// FOREACH : NORMAL CALCULATION OR print
+// MAP : value ko use karke new array banana
+// filter : Creates a new array of elements that give true for a condition
+// reduce : Performs some operations & reduces the array to a single value.(jab input bahut sara ho but output 1 hi chahiye tab reduce like : sum , average)
