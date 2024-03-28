@@ -122,3 +122,20 @@ const d14 = new Date("Jan 25 2015");
 
 const d15 = new Date("JANUARY, 25, 2015");
  console.log(d15,"\n");
+
+
+//  Date Input - Parsing Dates
+// If you have a valid date string, you can use the Date.parse() method to convert it to milliseconds.
+
+// Date.parse() returns the number of milliseconds between the date and January 1, 1970:
+
+// Example
+let msec = Date.parse("March 21, 2012");
+console.log(msec,"\n");
+
+// You can then use the number of milliseconds to convert it to a date object:
+
+// Example
+let mseca = Date.parse("March 21, 2012");
+const d = new Date(mseca);
+console.log(d,"\n");
