@@ -197,7 +197,28 @@ console.dir(document);
 console.dir(window.document);
 console.dir(document.body);
 console.log(document.body);
+console.log(document.images[0]);
+console.log(document.images[1]);
+console.log(document.form);
+console.log(document.doctype);
+console.log(document.URL);
+console.log(document.baseURI);
+console.log(document.domain);
 
+/* The following HTML objects (and object collections) are also accessible:
+
+document.anchors
+document.body
+document.documentElement
+document.embeds
+document.forms
+document.head
+document.images
+document.links
+document.scripts
+document.title
+ */
+document.getElementById("dema").innerHTML = "Number of anchors are: " + document.anchors.length;
 
 // ==========================================================================================================
 
