@@ -161,8 +161,10 @@ If you want to find all HTML elements that match a specified CSS selector (id, c
 This example returns a list of all [<p>] elements with [class="intro"].
 
 Example */
-
-const x2 = document.querySelectorAll("p.intro");
+document.querySelector("#myId / .myClass / tag");
+//returns first element
+document.querySelectorAll("#myId / .myClass / tag");
+//returns a NodeList
 
 /* 5. Finding HTML Elements by HTML Object Collections
 This example finds the form element with id="frm1", in the forms collection, and displays all element values:
@@ -174,3 +176,13 @@ for (let i = 0; i < x.length ;i++) {
   text += x.elements[i].value + "<br>";
 }
 document.getElementById("demoo").innerHTML = text;
+
+/* Properties:
+
+tagName : returns tag for element nodes
+
+innerText : returns the text content of the element and all its children
+
+innerHTML : returns the plain text or HTML contents in the element
+
+textContent : returns textual content even for hidden elements */
