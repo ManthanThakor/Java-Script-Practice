@@ -47,7 +47,27 @@ HTML DOM - standard model for HTML documents */
 
 
 
+/* 
+Window Object
+The window object represents an open window in a browser. It is browser’s object (not JavaScript’s)
+& is automatically created by browser.
 
+It is a global object with lots of properties & methods.
+ */
 
+ console.log("helllow");
 
+// Accessing window properties
+console.log(window.innerWidth); // Inner width of the browser window
+console.log(window.location.href); // Current URL
 
+// Using window methods
+window.alert("Hello, World!"); // Display an alert dialog
+let timeoutID = window.setTimeout(function() {
+    console.log("Delayed message");
+}, 2000); // Execute code after a delay
+
+// Handling window events
+window.addEventListener('resize', function() {
+    console.log("Window resized");
+});
