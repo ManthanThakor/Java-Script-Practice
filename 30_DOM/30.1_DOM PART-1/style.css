@@ -11,3 +11,10 @@
     border-radius: 5px;
   }
   
+  .box-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ac0000;
+  }

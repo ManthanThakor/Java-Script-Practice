@@ -197,3 +197,40 @@ console.dir(document);
 console.dir(window.document);
 console.dir(document.body);
 console.log(document.body);
+
+
+// ==========================================================================================================
+
+// ********** IMPLEMENTATION **********
+
+let heading = document.getElementById("box-title-a");
+console.dir(heading);
+heading.addEventListener("click", function() {
+  console.log(this);
+  alert(this.innerHTML);
+});
+
+
+let headings = document.getElementsByClassName("box-title");
+console.dir(headings);
+
+
+let paras = document.getElementsByTagName("p");
+console.dir(paras);
+let parass = document.getElementsByTagName("h1");
+console.dir(parass);
+
+// Query Selector 
+// WE CAN USE ID AND CLASS ALSO BUT MIMP IS QUERY SELECTOR
+
+let firstel = document.querySelector("p");
+console.dir(firstel);
+
+let secondel = document.querySelectorAll("p");
+console.dir(secondel);
+
+let thirdel = document.querySelector(".box-title");// in query selector for class we use (.)
+console.dir(thirdel);
+
+let fourthel = document.querySelector("#box-title-a");
+console.dir(fourthel);
