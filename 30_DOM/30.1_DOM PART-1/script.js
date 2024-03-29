@@ -141,6 +141,8 @@ Example */
 
 const element1 = document.getElementsByTagName("p");
 
+// !!!!!!!!!!!!! in above there is  single id so we need to write elements
+
 /* This example finds the element with id="main", and then finds all <p> elements inside "main":
 
 Example */
@@ -156,14 +158,18 @@ Example */
 
 const x1 = document.getElementsByClassName("intro");
 
+// !!!!!!!!!!!!! in above there are multiple classes so we need to write elements
+
 /* 4. Finding HTML Elements by CSS Selectors
 If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method.
 This example returns a list of all [<p>] elements with [class="intro"].
 
 Example */
-document.querySelector("#myId / .myClass / tag");
+
+// document.querySelector("#myId / .myClass / tag");
 //returns first element
-document.querySelectorAll("#myId / .myClass / tag");
+
+// document.querySelectorAll("#myId / .myClass / tag");
 //returns a NodeList
 
 /* 5. Finding HTML Elements by HTML Object Collections
@@ -186,3 +192,8 @@ innerText : returns the text content of the element and all its children
 innerHTML : returns the plain text or HTML contents in the element
 
 textContent : returns textual content even for hidden elements */
+
+console.dir(document);
+console.dir(window.document);
+console.dir(document.body);
+console.log(document.body);
