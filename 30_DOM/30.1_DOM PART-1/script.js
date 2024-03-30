@@ -357,7 +357,16 @@ console.dir(fourthel);
 
     // --------------------------innerTEXT-------------------------------
 
+let innerText1 = document.getElementById("oldpart");
+innerText1.innerText = "wow part";
+console.log(innerText1);
 
-    const paragraph = document.getElementById("sss-paa");
-    // Change the text content of the paragraph
-    paragraph.textContent = 'New Text Content';
+let innerText2 = document.getElementById("get-set-twoo");
+innerText2.innerText = "wow partssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";
+console.log(innerText2);
+
+
+let methodget;
+document.getElementById("oldpart").innerText = "wooooow"
+methodget = document.getElementById("oldpart").innerHTML;
+console.log(methodget);
