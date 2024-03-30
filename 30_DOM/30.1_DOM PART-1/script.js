@@ -358,5 +358,6 @@ console.dir(fourthel);
     // --------------------------innerTEXT-------------------------------
 
 
-    let innerTex1 = document.getElementById("setget-part").innerText = "wow";
-    console.log(innerTex1);
+    const paragraph = document.getElementById("sss-paa");
+    // Change the text content of the paragraph
+    paragraph.textContent = 'New Text Content';
