@@ -292,4 +292,5 @@ console.dir(fourthel);
     - getAttributeNode
     - Attributes       */
 
-    
+    let innerText = document.getElementById("getset-part").innerText;
+    console.log(innerText);
