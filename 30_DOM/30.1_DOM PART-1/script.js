@@ -378,5 +378,5 @@ let innerText3 = document.getElementById("get-set-twoo");
 innerText3.setAttribute("style", "background-color: red;");
 innerText3.setAttribute("id", "get-set-twoo");
 innerText3.setAttribute("onclick", "alert(123)");
-
+console.log(innerText3);
 
