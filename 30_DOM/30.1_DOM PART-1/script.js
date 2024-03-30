@@ -224,7 +224,7 @@ document.getElementById("dema").innerHTML = "Number of anchors are: " + document
 // document.getElementById("dema").innerHTML = document.body.innerHTML;
 
 // document.documentElement
-document.getElementById("dema").innerHTML = document.documentElement.innerHTML;
+// document.getElementById("dema").innerHTML = document.documentElement.innerHTML; //it will create a new document in that id !!!!!!!DANGER!!!!!!!!!!
 
 document.getElementById("demaa").innerHTML = "Number of embeds: " + document.embeds.length; //Number of embeds: 0
 
@@ -361,12 +361,22 @@ let innerText1 = document.getElementById("oldpart");
 innerText1.innerText = "wow part";
 console.log(innerText1);
 
-let innerText2 = document.getElementById("get-set-twoo");
-innerText2.innerText = "wow partssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";
-console.log(innerText2);
-
-
+// different method
 let methodget;
 document.getElementById("oldpart").innerText = "wooooow"
 methodget = document.getElementById("oldpart").innerHTML;
 console.log(methodget);
+
+   // --------------------------innerHTML-------------------------------
+
+let innerText2 = document.getElementById("get-set-twoo");
+innerText2.innerHTML = "<h1>wow partsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss<br>sssssssssssssssssssssssssssssssssssssssssss</h1>";
+
+// --------------------------setAttribute----------------------------
+
+let innerText3 = document.getElementById("get-set-twoo");
+innerText3.setAttribute("style", "background-color: red;");
+innerText3.setAttribute("id", "get-set-twoo");
+innerText3.setAttribute("onclick", "alert(123)");
+
+
