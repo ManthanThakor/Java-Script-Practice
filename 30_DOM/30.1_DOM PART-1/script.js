@@ -292,17 +292,17 @@ console.dir(fourthel);
     - getAttributeNode
     - Attributes       */
 
-// ----------------------------------------------------------------
+// --------------------------innerTEXT-------------------------------
 
     let innerText = document.getElementById("getset-part").innerText;
     console.log(innerText);
 
-// ----------------------------------------------------------------
+// ----------------------------innerHTML----------------------------
 
     let innerHtml = document.getElementById("getset-part").innerHTML;
     console.log(innerHtml);
 
-// ----------------------------------------------------------------
+// ----------------------------getAttribute----------------------------
 
     let getAttribute = document.getElementById("getset-part").getAttribute("class");
     console.log(getAttribute);
@@ -316,4 +316,11 @@ console.dir(fourthel);
     let getAttribute4 = document.getElementById("getset-part").getAttribute("id");
     console.log(getAttribute4);
     
-  // ----------------------------------------------------------------
+  // ---------------------getAttributeNode-----------------------------
+
+  
+
+
+
+
+  // --------------------- Attributes -----------------------------
