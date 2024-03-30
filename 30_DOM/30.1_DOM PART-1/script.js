@@ -318,9 +318,10 @@ console.dir(fourthel);
     
   // ---------------------getAttributeNode-----------------------------
 
-  
+  let getAttribute5 = document.getElementById("getset-part").getAttributeNode("onclick");
+  console.log(getAttribute5);
 
-
-
+  let getAttribute6 = document.getElementById("getset-part").getAttributeNode("onclick").value;
+  console.log(getAttribute6); // dont use just for knowledge use getAttribute instead getAttributeNode if only value needed
 
   // --------------------- Attributes -----------------------------
