@@ -325,3 +325,38 @@ console.dir(fourthel);
   console.log(getAttribute6); // dont use just for knowledge use getAttribute instead getAttributeNode if only value needed
 
   // --------------------- Attributes -----------------------------
+
+  let attributes = document.getElementById("getset-part").attributes;
+  console.log(attributes);
+
+  let attributes1 = document.getElementById("getset-part").attributes[1];
+  console.log(attributes1);
+  
+  let attributes2 = document.getElementById("getset-part").attributes[2];
+  console.log(attributes2);
+
+  let attributes3 = document.getElementById("getset-part").attributes[3];
+  console.log(attributes3);
+
+  // value
+  let attributes4 = document.getElementById("getset-part").attributes[2].value;
+  console.log(attributes4);
+
+  // name
+  let attributes5 = document.getElementById("getset-part").attributes[2].name;
+  console.log(attributes5);
+
+
+      // DOM SET METHODS
+
+/*  - innerTEXT
+    - innerHTML
+    - setAttribute
+    - Attribute
+    - removeAttributes       */
+
+    // --------------------------innerTEXT-------------------------------
+
+
+    // let innerText1 = document.getElementById("setget-part").innerText;
+    // console.log(innerText1);
