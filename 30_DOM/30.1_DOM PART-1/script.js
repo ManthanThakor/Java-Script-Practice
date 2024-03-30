@@ -218,7 +218,27 @@ document.links
 document.scripts
 document.title
  */
-document.getElementById("dema").innerHTML = "Number of anchors are: " + document.anchors.length;
+// Access all anchor elements with a name attribute
+document.getElementById("dema").innerHTML = "Number of anchors are: " + document.anchors.length; // Number of anchors are: 3
+
+// document.getElementById("dema").innerHTML = document.body.innerHTML;
+
+// document.documentElement
+document.getElementById("dema").innerHTML = document.documentElement.innerHTML;
+
+document.getElementById("demaa").innerHTML = "Number of embeds: " + document.embeds.length; //Number of embeds: 0
+
+document.getElementById("demaaa").innerHTML = "Number of forms: " + document.forms.length; //Number of forms: 2
+
+document.getElementById("demaaaa").innerHTML = document.head; //[object HTMLHeadElement]
+
+document.getElementById("demaaaaa").innerHTML = "Number of images: " + document.images.length; //Number of images: 2
+
+document.getElementById("demaaaaaa").innerHTML = "Number of links: " + document.links.length; //Number of links: 0
+
+document.getElementById("demaaaaaaa").innerHTML = "Number of scripts: " + document.scripts.length; // Number of scripts: 2
+
+document.getElementById("demaaaaaaaa").innerHTML = "Number of title: " + document.title; //Number of title: DOM PART -1
 
 // ==========================================================================================================
 
@@ -255,3 +275,21 @@ console.dir(thirdel);
 
 let fourthel = document.querySelector("#box-title-a");
 console.dir(fourthel);
+
+
+
+
+// WHAT WE CAN GET WITH DOM?
+/*  - HTML
+    - Text
+    - ATTRIBUTE */ 
+
+    // DOM GET METHODS
+
+/*  - innerTEXT
+    - innerHTML
+    - getAttribute
+    - getAttributeNode
+    - Attributes       */
+
+    
