@@ -358,5 +358,5 @@ console.dir(fourthel);
     // --------------------------innerTEXT-------------------------------
 
 
-    // let innerText1 = document.getElementById("setget-part").innerText;
-    // console.log(innerText1);
+    let innerTex1 = document.getElementById("setget-part").innerText = "wow";
+    console.log(innerTex1);
