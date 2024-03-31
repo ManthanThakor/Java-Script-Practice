@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Text in DOM</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM PART -1</title>
+    <link rel="stylesheet" href="style.css" integrity="<KEY>" crossorigin="anonymous" />
 </head>
+
 <body>
+    <div class="container home-section">
+        <h1 class="titlepart">DOM PART - 1</h1>
+        <p class="lorempart">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eius ullam
+            debitis numquam dolores dolorem unde dolor ea sequi vitae, praesentium
+            possimus nam in quas modi dolorum? Ex minima voluptatem explicabo
+            praesentium? Ad nisi obcaecati illo.
+        </p>
+
+        <p id="demo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora, aut itaque atque culpa deserunt
+            eum id exercitationem quasi sint reiciendis corrupti. Quia architecto, odio quas ratione modi facere illum?
+        </p>
+    </div>
+
+    <div id="main">
+        <p>Finding HTML Elements by Tag Name</p>
+        <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+    </div>
+    <button type="button" class="buttondom">CLICK ME</button>
+
+
+
+    <div class="Findinganchors" style="padding: 50px;">
+        <p class="demas">Finding HTM</p>
+        <p>This example demonstrates the <b>getElementsByClassName</b> method.</p>
+   
+    <button type="button" class="buttondom">CLICK ME</button>
+<div>
+    <a name="html">HTML Tutorial</a><br>
+    <a name="css">CSS Tutorial</a><br>
+    <a name="xml">XML Tutorial</a><br>
+    <p id="dema"></p></div>
+    <p id="demaa"></p></div>
+    <p id="demaaa"></p></div>
+    <p id="demaaaa"></p></div>
+    <p id="demaaaaa"></p></div>
+    <p id="demaaaaaa"></p></div>
+    <p id="demaaaaaaa"></p></div>
+    <p id="demaaaaaaaaa"></p></div>
+    <p id="demaaaaaaaa"></p></div>
+
+</div>
+
+
+    <!-- Finding HTML Elements by HTML Object Collections
+ -->
+    <form id="frm1" action="/action_page.php">
+        First name: <input type="text" name="fname" value="Donald"><br>
+        Last name: <input type="text" name="lname" value="Duck"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>These are the values of each element in the form:</p>
+    <p id="demoo"></p>
+
+    <div class="img-section">
+        <h1 class="title-img">WELCOME</h1>
+        <img src="IMG/wp7860830-women-gaming-wallpapers.jpg" style="height: 500px; width: 90%;" alt="Tree"
+            id="img-part" />
+    </div>
+
+    <div class="box-section">
+        <div class="box1">
+            <h1 class="box-title">WELCOME</h1>
+        </div>
+        <div class="box1">
+            <h1 class="box-title">WELCOME</h1>
+        </div>
+        <div class="box1">
+            <h1 class="box-title">WELCOME</h1>
+        </div>
+        <div class="box2">
+            <h1 class="box-title">WELCOME</h1>
+        </div>
+        <div class="box2">
+            <h1 class="box-title">WELCOME</h1>
+        </div>
+        <div class="box2">
+            <h1 class="box-title">WELCOME</h1>
+        </div>
+    </div>
+
+
+    <div class="box-section-two" id="box-part-two">
+        <div class="box1-two">
+            <h1 id="box-title-a">WELCOME</h1>
+        </div>
+        <div class="box1-two">
+            <h1 id="box-title-b">WELCOME</h1>
+        </div>
+        <div class="box1-two">
+            <h1 id="box-title-c">WELCOME</h1>
+        </div>
+        <div class="box2-two">
+            <h1 id="box-title-d">WELCOME</h1>
+        </div>
+        <div class="box2-two">
+            <h1 id="box-title-e">WELCOME</h1>
+        </div>
+        <div class="box2-two">
+            <h1 id="box-title-f">WELCOME</h1>
+        </div>
+    </div>
+    
     <div class="getset-part abc assa asasss" id="getset-part" style="background-color: beige; padding: 2rem;" onclick="xyz()">
         <p>-------------------------------------------------------------------------------------------------------------------------------------------------</p>
         <p id="get-set-one">
@@ -13,7 +121,7 @@
         </p>
         <img src="IMG/wp7860830-women-gaming-wallpapers.jpg" style="height: 500px; width: 90%;" alt="Tree"
         id="img-part-two" />
-        <p id="get-set-two">
+        <p id="get-set-twoo">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos doloribus ab dolore, non sequi neque saepe. Iure qui eligendi alias dignissimos? Accusantium placeat saepe soluta obcaecati temporibus ipsa et totam.
         </p>
 
@@ -28,11 +136,7 @@
         
     </div>
 
-    <script>
-        // Access the paragraph element by its ID
-        let innerText1 = document.getElementById("oldpart");
-innerText1.innerText = "wow part";
-console.log(innerText1);
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
