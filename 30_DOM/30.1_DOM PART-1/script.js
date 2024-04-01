@@ -279,6 +279,17 @@ console.dir(fourthel);
 
 
 
+
+// JavaScript HTML DOM - Changing HTML
+// The HTML DOM allows JavaScript to change the content of HTML elements.
+
+// Changing HTML Content
+// The easiest way to modify the content of an HTML element is by using the innerHTML property.
+
+// To change the content of an HTML element, use this syntax:
+
+//!! document.getElementById(id).innerHTML = new HTML !!
+
 // WHAT WE CAN GET WITH DOM?
 /*  - HTML
     - Text
@@ -423,3 +434,21 @@ images.setAttribute('src', 'IMG/1117441.jpg');
 images.setAttribute('alt', 'loading');
 images.setAttribute('style', 'width: 250px; height: 250px;');
 images.removeAttribute('src'); // remove attribute
+
+
+
+// Changing the Value of an Attribute
+// To change the value of an HTML attribute, use this syntax:
+
+// document.getElementById(id).attribute = new value
+
+// Dynamic HTML content
+// JavaScript can create dynamic HTML content:
+
+// Date : Mon Apr 01 2024 09:34:31 GMT+0530 (India Standard Time)
+
+document.querySelector(".dinamic").innerHTML = "Date : " + Date(); 
+
+
+
+
