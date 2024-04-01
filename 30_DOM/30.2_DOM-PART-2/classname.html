@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example using .className</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" class="box">Hello</div>
+
+    <script>
+        // Get the element
+        const element = document.getElementById('myDiv');
+
+        // Get the current class names
+        const currentClass = element.className;
+        console.log('Current class:', currentClass); // Output: box
+
+        // Add a new class
+        element.className += ' highlight';
+    </script>
+</body>
+</html>
