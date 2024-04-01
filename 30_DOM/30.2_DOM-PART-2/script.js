@@ -469,6 +469,12 @@ document.getElementById("id02").innerHTML = document.getElementById("id01").node
 
 // https://youtu.be/Pe3sdhA7YME?si=EO5BxC99tMpFCQ4r
 // https://youtu.be/nYr4e4H09MM?si=T78Lyd-wLzfqpHMq
+// https://youtu.be/Fo2QsLDOYlY?si=A_NREsTaZbD3LXFC
+// https://youtu.be/kn1BVQYgEDk?si=bnDPuSMV7cBUfeQE 
 
+/* - Agar kuch find nahi hoga to parent node kuch bhi deta he | parent element undefine dikha dega 
+- children node  Comment SPACE SABKO Target KARTA HE | children only text ko Target KARTA HE 
+- FIRST CHILD TEXT NODE  SPACE Comment SAB KO TARGET KAREGA | FIRST Element CHILD PAHLE JO TAG AA RAAHA HOGA USE TARGET KAREGA (*YAHI USE HOTI HE*)
+-  */
 
-// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
