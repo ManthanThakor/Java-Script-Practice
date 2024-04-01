@@ -2,7 +2,7 @@
 
 
 
-// _____JavaScript HTML DOM - Changing CSS____
+// _____JavaScript HTML DOM - Changing CSS________
 
 
 /* The HTML DOM allows JavaScript to change the style of HTML elements.
@@ -36,3 +36,27 @@ document.getElementById("p2").style.color = "blue";
 onclick="document.getElementById('id1').style.color = 'red'">
 Click Me!</button> */}
 
+// const myDiv = document.getElementById('myDiv');
+
+//         // Modify CSS styles
+//         myDiv.style.backgroundColor = 'blue';
+//         myDiv.style.width = '200px';
+//         myDiv.style.height = '200px';
+// =================================================================
+
+/* To add multiple styles to an element in JavaScript, you can concatenate multiple CSS property-value pairs into a single string and then assign it to the style property of the element. Here's how you can do it: */
+
+
+ // Access the element
+ const myDiv = document.getElementById('myDiv');
+
+ // Define multiple CSS styles as a string
+ const multipleStyles = 'background-color: red; width: 200px; height: 200px;';
+
+ // Assign the styles to the element
+ myDiv.style.cssText = multipleStyles;
+
+
+// =================================================================
+
+document.querySelector("#doma").className = ""
