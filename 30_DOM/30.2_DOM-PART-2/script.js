@@ -295,6 +295,9 @@ function myFunction(a, b) {
 // Event Bubbling or Event Capturing?
 
 
+
+//https://youtu.be/CO_DAXswOrc?si=Eg1S7YFFhkSmwGR3&t=731 
+
 /* Event bubbling and event capturing are two phases of event propagation in the Document Object Model (DOM) when an event occurs on an element. Understanding these phases is crucial for handling events effectively in JavaScript.
 
 Event Bubbling:
@@ -332,3 +335,20 @@ document.querySelector('#inner').addEventListener('click', e => {
 // Outer div is clicked
 
 // Inner div is clicked
+
+
+
+document.querySelector(".child").addEventListener("click", (e) => {
+  e.stopPropagation() // stop propagation of click
+  alert("Child Was clicked")
+})
+
+document.querySelector(".childContainer").addEventListener("click", (e) => {
+  e.stopPropagation()   
+  alert("childContainer Was clicked")
+})
+
+document.querySelector(".container").addEventListener("click", (e) => {
+  
+  alert("container Was clicked")
+})
