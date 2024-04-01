@@ -101,16 +101,49 @@ document.querySelector("#dampp").classList.add("asaa");
 
 // document.querySelector('#dam').classList.toggle('className');
 
+const button = document.getElementById('myButtonss');
+const divx = document.getElementById('myDivss');
+
+// Add click event listener to the button
+button.addEventListener('click', function() {
+    // Toggle the "highlight" class on the div
+    divx.classList.toggle('highlight');
+});
+
+//=======================
 
 // document.querySelector('#dam').classList.contains('className');
 
-// document.querySelector('#dam').classList.item(index);
+const divAA = document.getElementById('myDivAAAA');
 
+        // Check if the div has the "highlight" class
+        const hasHighlightClass = divAA.classList.contains('highlight');
+        console.log('Has highlight class:', hasHighlightClass); // Output: true
+
+        // Check if the div has the "box" class
+        const hasBoxClass = divAA.classList.contains('box');
+        console.log('Has box class:', hasBoxClass); // Output: true
+
+        // Check if the div has the "otherClass" class
+        const hasOtherClass = divAA.classList.contains('otherClass');
+        console.log('Has otherClass class:', hasOtherClass); // Output: false
+
+//=======================
+
+// document.querySelector('#dam').classList.item(index);
 // document.querySelector('#dam').classList.length;
 
+const diva = document.getElementById('myDivaa');
 
+// Accessing classList properties
+console.log('Length:', diva.classList.length); // Output: 3
+// Accessing class at index
+console.log('Item at index 0:', diva.classList.item(0)); // Output: class1
+console.log('Item at index 2:', diva.classList.item(2)); // Output: class3
+console.log('Item at index 3:', diva.classList.item(3)); // Output: null
 
-// document.querySelector('#dam').classList.value;
+//=======================
+
 
 // document.querySelector('#dam').classList.forEach(callback);
 
