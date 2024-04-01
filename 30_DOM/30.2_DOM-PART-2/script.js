@@ -59,4 +59,52 @@ Click Me!</button> */}
 
 // =================================================================
 
-document.querySelector("#doma").className = ""
+
+//   Description
+// The className property sets or returns an element's class attribute.
+
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 50) {
+    document.getElementById("myP").className = "test";
+  } else {
+    document.getElementById("myP").className = "";
+  }
+}
+
+
+/* .className:
+.className is a property of DOM elements that represents the value of the class attribute of an element as a single string. You can use .className to get or set the classes of an element. */
+
+
+// Get the value of the class attribute
+const classNameValue = element.className;
+
+// Set the value of the class attribute
+element.className = 'newClass';
+
+
+/* .classList:
+.classList is a property of DOM elements that returns a collection of the element's classes as a DOMTokenList object. This object provides methods for adding, removing, toggling, and checking the presence of classes. */
+
+// Add a class to the element
+element.classList.add('newClass');
+
+// Remove a class from the element
+element.classList.remove('oldClass');
+
+// Toggle a class on the element
+element.classList.toggle('active');
+
+// Check if the element has a specific class
+const hasClass = element.classList.contains('className');
+
+/* 
+Key Differences:
+Complexity: .className is a simple string property, while .classList provides a more sophisticated API with methods for class manipulation.
+
+Flexibility: .classList allows you to perform more specific operations like toggling classes or checking if an element has a particular class.
+
+Browser Support: .classList is not supported in older versions of Internet Explorer (prior to IE10), whereas .className is widely supported. */

@@ -3,10 +3,13 @@
     margin: 0;
 }
 
-#doma{
+.newstyle{
     background-color: #000;
     color: #fff;
     font-size: 20px;
     padding: 10px;
     margin: 10px;
 }
+.test {
+    background-color: yellow;
+  }
