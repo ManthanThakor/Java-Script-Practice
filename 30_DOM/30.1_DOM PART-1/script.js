@@ -380,3 +380,24 @@ innerText3.setAttribute("id", "get-set-twoo");
 innerText3.setAttribute("onclick", "alert(123)");
 console.log(innerText3);
 
+// --------------------------Attribute----------------------------
+
+
+/* 
+Modifying Attributes:
+You can modify attribute values using methods like setAttribute() or directly updating the property. */
+
+
+// Using setAttribute() method
+
+const image = document.getElementById('myImage');
+const impart = image.setAttribute('src', 'new_image.jpg');
+
+// Directly updating the property
+image.alt = 'New Alt Text';
+
+console.log(srcAttribute); // Output: image.jpg
+
+// Directly accessing the property
+const altAttribute = image.alt;
+console.log(altAttribute);
