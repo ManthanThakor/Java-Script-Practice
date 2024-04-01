@@ -164,6 +164,8 @@ function removeClass() {
 
 // https://www.w3schools.com/js/js_htmldom_events.asp
 
+// https://youtu.be/R7mu7nKFc7w?si=R6taBgfUlafvrcoL 
+
 // Reacting to Events
 // A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
 
@@ -179,3 +181,70 @@ function removeClass() {
 // When an input field is changed
 // When an HTML form is submitted
 // When a user strokes a key
+
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+// JavaScript HTML DOM EventListener
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+// https://youtu.be/NhRhrAziBRU?si=OjlMvG1nT8bzVSJH 
+
+/* The addEventListener() method
+Example
+Add an event listener that fires when a user clicks a button: */
+
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+  document.getElementById("demoA").innerHTML = Date();
+}
+
+
+
+/* The addEventListener() method attaches an event handler to the specified element.
+
+The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
+
+You can add many event handlers to one element.
+
+You can add many event handlers of the same type to one element, i.e two "click" events.
+
+You can add event listeners to any DOM object not only HTML elements. i.e the window object.
+
+The addEventListener() method makes it easier to control how the event reacts to bubbling.
+
+When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.
+
+You can easily remove an event listener by using the removeEventListener() method.
+
+Syntax
+element.addEventListener(event, function, useCapture);
+The first parameter is the type of the event (like "click" or "mousedown" or any other HTML DOM Event.)
+
+The second parameter is the function we want to call when the event occurs.
+
+The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.
+
+Note that you don't use the "on" prefix for the event; use "click" instead of "onclick". */
+
+// ============================================================================= 
+
+
+// Add an Event Handler to an Element
+
+// SYNTAX  :
+/*  document.querySelector("").addEventListener("click", functionName);
+ function functionName(){
+    statement
+ } */
+
+ 
+
+document.getElementById("btn").addEventListener("click", xxx);
+
+function xxx() {
+  alert ("Hello World!");
+}
