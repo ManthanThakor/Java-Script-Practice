@@ -73,35 +73,6 @@ function myFunction() {
 
 .classList is a property of DOM elements that returns a collection of the element's classes as a DOMTokenList object. This object provides methods for adding, removing, toggling, and checking the presence of classes. */
 
-// Toggle a class on the element
-// element.classList.toggle('active');
-
-// Check if the element has a specific class
-// const hasClass = element.classList.contains('className');
-
-// document.querySelector('#dam').classList.add('className');
-
-document.querySelector("#dampp").classList.add("asaa");
-
-// document.querySelector('#dam').classList.remove('className');
-
-function removeClass() {
-  // Select the element with ID "dam" and remove class "className"
-  document.querySelector("#dam").classList.remove("className");
-}
-
-// document.querySelector('#dam').classList.toggle('className');
-
-// document.querySelector('#dam').classList.contains('className');
-
-// document.querySelector('#dam').classList.item(index);
-
-// document.querySelector('#dam').classList.length;
-
-// document.querySelector('#dam').classList.value;
-
-// document.querySelector('#dam').classList.forEach(callback);
-
 // classList
 // classList.add('className');
 // classList.remove('className');
@@ -111,6 +82,38 @@ function removeClass() {
 // classList.length
 // classList.value
 // classList.forEach(callback)
+
+// Toggle a class on the element
+// element.classList.toggle('active');
+
+// Check if the element has a specific class
+// const hasClass = element.classList.contains('className');
+
+// =======
+// document.querySelector('#dam').classList.add('className');
+
+document.querySelector("#dampp").classList.add("asaa");
+
+// document.querySelector('#dam').classList.remove('className');
+
+  // Select the element with ID "dam" and remove class "className"
+  document.querySelector("#dam").classList.remove("aaa");
+
+// document.querySelector('#dam').classList.toggle('className');
+
+
+// document.querySelector('#dam').classList.contains('className');
+
+// document.querySelector('#dam').classList.item(index);
+
+// document.querySelector('#dam').classList.length;
+
+
+
+// document.querySelector('#dam').classList.value;
+
+// document.querySelector('#dam').classList.forEach(callback);
+
 
 // =================================================================
 
