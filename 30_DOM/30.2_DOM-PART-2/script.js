@@ -242,8 +242,31 @@ Note that you don't use the "on" prefix for the event; use "click" instead of "o
  } */
 
  
-document.getElementById("btn").addEventListener("click", xxx);
+document.getElementById("btn").addEventListener("click", as);
 
-function xxx() {
+function as() {
   alert ("Hello World!");
 }
+
+
+// Remove an Event Handler from an Element
+
+// SYNTAX  :
+
+// document.getElementById("btn").removeEventListener("click", as);
+
+// =============================================================================
+
+const div = document.getElementById('myDisv');
+
+        // Add mouseover event listener
+        div.addEventListener('mouseover', function() {
+            div.textContent = 'Mouse over event triggered';
+            div.style.backgroundColor = 'yellow';
+        });
+
+        // Add mouseout event listener
+        div.addEventListener('mouseout', function() {
+            div.textContent = 'Hover over me';
+            div.style.backgroundColor = 'white';
+        });
