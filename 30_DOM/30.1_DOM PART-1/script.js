@@ -380,7 +380,6 @@ innerText3.setAttribute("id", "get-set-twoo");
 innerText3.setAttribute("onclick", "alert(123)");
 console.log(innerText3);
 
-// --------------------------Attribute----------------------------
 
 
 /* 
@@ -395,6 +394,26 @@ image.setAttribute('src', 'IMG/1117441.jpg');
 image.setAttribute('alt', 'loading');
 image.setAttribute('style', 'width: 250px; height: 250px;');
 
+
+
+// --------------------------Attribute----------------------------
+
+
+
+
+
+
+
+
+
+// Checking Attribute Existence:
+// You can check if an attribute exists using the hasAttribute() method.
+
+
+const hasSrcAttribute = image.hasAttribute('src');
+console.log(hasSrcAttribute); // Output: true
+
+
 // Removing Attributes:
 // You can remove attributes using the removeAttribute() method.
 
@@ -403,5 +422,3 @@ images.setAttribute('src', 'IMG/1117441.jpg');
 images.setAttribute('alt', 'loading');
 images.setAttribute('style', 'width: 250px; height: 250px;');
 images.removeAttribute('src'); // remove attribute
-
-
