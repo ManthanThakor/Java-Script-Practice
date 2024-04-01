@@ -3,25 +3,25 @@
 @ Variables and Data Types:
 Understand how to declare variables, work with different data types such as numbers, strings, booleans, arrays, and objects.
 
-Operators and Expressions:
+@ Operators and Expressions:
 Learn about arithmetic, assignment, comparison, logical, and bitwise operators. Understand how to use them in expressions.
 
-Control Flow:
+@ Control Flow:
 Master control flow statements like if-else, switch-case, and loops (for, while, do-while) to control the flow of execution in your code.
 
-Functions:
+@ Functions:
 Understand functions, function declarations, function expressions, arrow functions, and how to pass arguments and return values from functions.
 
-Scope and Closures:
+@ Scope and Closures:
 Learn about variable scope, lexical scope, and closures. Understand how closures work and their practical applications.
 
-Arrays and Objects:
+@ Arrays and Objects:
 Dive into working with arrays and objects. Learn about array methods (e.g., map, filter, reduce) and object properties/methods.
 
-DOM Manipulation:
+@ DOM Manipulation:
 Understand the Document Object Model (DOM) and how to manipulate HTML elements using JavaScript. Learn about selecting elements, modifying content, attributes, and styles.
 
-Events:
+@ Events:
 Learn how to handle events in JavaScript, such as click, mouseover, keydown, etc. Understand event listeners and how to attach them to elements.
 
 Asynchronous JavaScript:
