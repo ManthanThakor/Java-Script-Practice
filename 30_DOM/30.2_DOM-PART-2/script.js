@@ -249,7 +249,21 @@ div.addEventListener("click", function () {
 });
 
 
+// --- other methods --------------------------------
 
+var x = document.getElementById("myBtnnnnn");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("click", mySecondFunction);
+x.addEventListener("mouseout", myThirdFunction);
+
+
+function mySecondFunction() {
+  document.getElementById("demmooo").innerHTML += "Clicked!<br>";
+}
+
+function myThirdFunction() {
+  document.getElementById("demmooo").innerHTML += "Moused out!<br>";
+}
 
 //----------------------------------------------------------------
 
@@ -262,3 +276,59 @@ input.addEventListener('keydown', function(event) {
 
 //----------------------------------------------------------------
 
+// Passing Parameters
+
+// When passing parameter values, use an "anonymous function" that calls the specified function with the parameters:
+
+let p1 = 5;
+let p2 = 7;
+document.getElementById("buttonpart").addEventListener("click", function() {
+  myFunction(p1, p2);
+});
+
+function myFunction(a, b) {
+  document.getElementById("dkm").innerHTML = a * b;
+}
+
+
+
+// Event Bubbling or Event Capturing?
+
+
+/* Event bubbling and event capturing are two phases of event propagation in the Document Object Model (DOM) when an event occurs on an element. Understanding these phases is crucial for handling events effectively in JavaScript.
+
+Event Bubbling:
+In event bubbling, the event starts from the target element and bubbles up through its ancestors in the DOM hierarchy until it reaches the root element (<html>), triggering event handlers along the way.
+
+Event Capturing:
+In event capturing (also known as trickling or capturing phase), the event starts from the root element (<html>) and travels down through the DOM hierarchy until it reaches the target element, triggering event handlers along the way. */
+
+
+// Event Bubbling
+
+// document.querySelector('#outer').addEventListener('click', e => {
+//    console.log('Outer div is clicked');
+// }, false);
+// document.querySelector('#inner').addEventListener('click', e => {
+//    console.log('Inner div is clicked');
+// }, false);
+/* If you run the above code and click in the inner div, you'll get the log −
+
+Inner div is clicked
+
+Outer div is clicked */
+
+
+// Event Capturing
+
+document.querySelector('#outer').addEventListener('click', e => {
+   console.log('Outer div is clicked');
+}, true);
+document.querySelector('#inner').addEventListener('click', e => {
+   console.log('Inner div is clicked');
+}, true);
+// If you run the above code and click in the inner div, you'll get the log −
+
+// Outer div is clicked
+
+// Inner div is clicked
