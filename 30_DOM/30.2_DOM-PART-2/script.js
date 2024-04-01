@@ -408,13 +408,64 @@ All comments are comment nodes */
      E- child node
      F- child node
      G- child node
-all children are siblings 
-  if point is D then previous sibling is c and next sibling is E,
-  if point is E then next sibling is F AND previous E sibling
+
+- all children are siblings 
+- if point is D then previous sibling is c and next sibling is E,
+- if point is E then next sibling is F AND previous E sibling
+- First child is B  and  last child is G
  */
 
 // - PARENT NODE AND PARENT ELEMENT --------------------------------
 
 
-  
+document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;
 
+/* innerHTML
+In this tutorial we use the innerHTML property to retrieve the content of an HTML element.
+
+However, learning the other methods above is useful for understanding the tree structure and the navigation of the DOM.
+
+DOM Root Nodes
+There are two special properties that allow access to the full document:
+
+document.body - The body of the document
+document.documentElement - The full document */
+
+/* document.getElementById("demo").innerHTML = document.body.innerHTML; */
+
+
+/* The nodeName Property
+The nodeName property specifies the name of a node.
+
+nodeName is read-only
+nodeName of an element node is the same as the tag name
+nodeName of an attribute node is the attribute name
+nodeName of a text node is always #text
+nodeName of the document node is always #documenT */
+
+/* document.getElementById("id02").innerHTML = document.getElementById("id01").nodeName; */
+
+
+/* The nodeValue Property
+The nodeValue property specifies the value of a node.
+
+nodeValue for element nodes is null
+nodeValue for text nodes is the text itself
+nodeValue for attribute nodes is the attribute value
+The nodeType Property
+The nodeType property is read only. It returns the type of a node.
+
+Example
+<h1 id="id01">My First Page</h1>
+<p id="id02"></p>
+
+<script>
+document.getElementById("id02").innerHTML = document.getElementById("id01").nodeType; //1
+</script> */
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+//must watch
+
+// https://youtu.be/Pe3sdhA7YME?si=EO5BxC99tMpFCQ4r
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
