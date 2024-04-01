@@ -348,7 +348,7 @@ document.querySelector(".childContainer").addEventListener("click", (e) => {
   alert("childContainer Was clicked")
 })
 
-document.querySelector(".container").addEventListener("click", (e) => {
-  
+document.querySelector(".containerr").addEventListener("click", (e) => {
+
   alert("container Was clicked")
 })
