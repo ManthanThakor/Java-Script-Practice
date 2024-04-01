@@ -1,9 +1,4 @@
-
-
-
-
 // _____JavaScript HTML DOM - Changing CSS________
-
 
 /* The HTML DOM allows JavaScript to change the style of HTML elements.
 
@@ -13,8 +8,6 @@ To change the style of an HTML element, use this syntax:
 document.getElementById(id).style.property = new style */
 
 document.getElementById("p2").style.color = "blue";
-
-
 
 // Using Events
 // The HTML DOM allows you to execute code when an event occurs.
@@ -28,13 +21,13 @@ document.getElementById("p2").style.color = "blue";
 
 // This example changes the style of the HTML element with id="id1", when the user clicks a button:
 
-
-
-{/* <p id="p2">Hello World!</p>
+{
+  /* <p id="p2">Hello World!</p>
 <h1 id="id1">My Heading 1</h1>
 <button type="button"
 onclick="document.getElementById('id1').style.color = 'red'">
-Click Me!</button> */}
+Click Me!</button> */
+}
 
 // const myDiv = document.getElementById('myDiv');
 
@@ -46,25 +39,23 @@ Click Me!</button> */}
 
 /* To add multiple styles to an element in JavaScript, you can concatenate multiple CSS property-value pairs into a single string and then assign it to the style property of the element. Here's how you can do it: */
 
+// Access the element
+const myDiv = document.getElementById("myDiv");
 
- // Access the element
- const myDiv = document.getElementById('myDiv');
+// Define multiple CSS styles as a string
+const multipleStyles = "background-color: red; width: 200px; height: 200px;";
 
- // Define multiple CSS styles as a string
- const multipleStyles = 'background-color: red; width: 200px; height: 200px;';
-
- // Assign the styles to the element
- myDiv.style.cssText = multipleStyles;
-
+// Assign the styles to the element
+myDiv.style.cssText = multipleStyles;
 
 // =================================================================
-
 
 //   Description
 // The className property sets or returns an element's class attribute.
 
-
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+  myFunction();
+};
 
 function myFunction() {
   if (document.documentElement.scrollTop > 50) {
@@ -74,17 +65,14 @@ function myFunction() {
   }
 }
 
-
 /* .className:
 .className is a property of DOM elements that represents the value of the class attribute of an element as a single string. You can use .className to get or set the classes of an element. */
-
 
 // Get the value of the class attribute
 // const classNameValue = element.className;
 
 // Set the value of the class attribute
 // element.className = 'newClass';
-
 
 /* .classList:
 .classList is a property of DOM elements that returns a collection of the element's classes as a DOMTokenList object. This object provides methods for adding, removing, toggling, and checking the presence of classes. */
@@ -109,38 +97,28 @@ Flexibility: .classList allows you to perform more specific operations like togg
 
 Browser Support: .classList is not supported in older versions of Internet Explorer (prior to IE10), whereas .className is widely supported. */
 
-
-
-// class list 
+// class list
 
 // document.querySelector('#dam').classList.add('className');
 
 document.querySelector("#dampp").classList.add("asaa");
 
-
-
 // document.querySelector('#dam').classList.remove('className');
 
 function removeClass() {
-    // Select the element with ID "dam" and remove class "className"
-    document.querySelector('#dam').classList.remove('className');
+  // Select the element with ID "dam" and remove class "className"
+  document.querySelector("#dam").classList.remove("className");
 }
-
 
 // document.querySelector('#dam').classList.toggle('className');
 
-
 // document.querySelector('#dam').classList.contains('className');
-
 
 // document.querySelector('#dam').classList.item(index);
 
-
 // document.querySelector('#dam').classList.length;
 
-
 // document.querySelector('#dam').classList.value;
-
 
 // document.querySelector('#dam').classList.forEach(callback);
 
@@ -156,15 +134,11 @@ function removeClass() {
 
 // =================================================================
 
-
-
-
 // _______JavaScript HTML DOM Events______
-
 
 // https://www.w3schools.com/js/js_htmldom_events.asp
 
-// https://youtu.be/R7mu7nKFc7w?si=R6taBgfUlafvrcoL 
+// https://youtu.be/R7mu7nKFc7w?si=R6taBgfUlafvrcoL
 
 // Reacting to Events
 // A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
@@ -182,15 +156,13 @@ function removeClass() {
 // When an HTML form is submitted
 // When a user strokes a key
 
-
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 // JavaScript HTML DOM EventListener
 
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
-
-// https://youtu.be/NhRhrAziBRU?si=OjlMvG1nT8bzVSJH 
+// https://youtu.be/NhRhrAziBRU?si=OjlMvG1nT8bzVSJH
 
 /* The addEventListener() method
 Example
@@ -201,8 +173,6 @@ document.getElementById("myBtn").addEventListener("click", displayDate);
 function displayDate() {
   document.getElementById("demoA").innerHTML = Date();
 }
-
-
 
 /* The addEventListener() method attaches an event handler to the specified element.
 
@@ -230,8 +200,7 @@ The third parameter is a boolean value specifying whether to use event bubbling 
 
 Note that you don't use the "on" prefix for the event; use "click" instead of "onclick". */
 
-// ============================================================================= 
-
+// =============================================================================
 
 // Add an Event Handler to an Element
 
@@ -241,13 +210,11 @@ Note that you don't use the "on" prefix for the event; use "click" instead of "o
     statement
  } */
 
- 
 document.getElementById("btn").addEventListener("click", as);
 
 function as() {
-  alert ("Hello World!");
+  alert("Hello World!");
 }
-
 
 // Remove an Event Handler from an Element
 
@@ -255,18 +222,43 @@ function as() {
 
 // document.getElementById("btn").removeEventListener("click", as);
 
-// =============================================================================
 
-const div = document.getElementById('myDisv');
+// =======================
 
-        // Add mouseover event listener
-        div.addEventListener('mouseover', function() {
-            div.textContent = 'Mouse over event triggered';
-            div.style.backgroundColor = 'yellow';
-        });
+// Add Many Event Handlers to the Same Element
 
-        // Add mouseout event listener
-        div.addEventListener('mouseout', function() {
-            div.textContent = 'Hover over me';
-            div.style.backgroundColor = 'white';
-        });
+// ========================
+
+// The addEventListener() method allows you to add many events to the same element, without overwriting existing events:
+
+const div = document.getElementById("myDisv");
+// Add mouseover event listener
+div.addEventListener("mouseover", function () {
+  div.textContent = "Mouse over event triggered";
+  div.style.backgroundColor = "yellow";
+});
+// Add mouseout event listener
+div.addEventListener("mouseout", function () {
+  div.textContent = "Hover over me";
+  div.style.backgroundColor = "white";
+});
+// Add click event listener
+div.addEventListener("click", function () {
+  div.textContent = "Click event triggered";
+  div.style.backgroundColor = "red";
+});
+
+
+
+
+//----------------------------------------------------------------
+
+// Add keydown event listener
+
+const input = document.getElementById('myInput');
+input.addEventListener('keydown', function(event) {
+    console.log('Key pressed:', event.key);
+});
+
+//----------------------------------------------------------------
+
