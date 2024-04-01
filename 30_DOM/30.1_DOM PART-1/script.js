@@ -391,13 +391,17 @@ You can modify attribute values using methods like setAttribute() or directly up
 // Using setAttribute() method
 
 const image = document.getElementById('myImage');
-const impart = image.setAttribute('src', 'new_image.jpg');
+image.setAttribute('src', 'IMG/1117441.jpg');
+image.setAttribute('alt', 'loading');
+image.setAttribute('style', 'width: 250px; height: 250px;');
 
-// Directly updating the property
-image.alt = 'New Alt Text';
+// Removing Attributes:
+// You can remove attributes using the removeAttribute() method.
 
-console.log(srcAttribute); // Output: image.jpg
+const images = document.getElementById('myImages');
+images.setAttribute('src', 'IMG/1117441.jpg');
+images.setAttribute('alt', 'loading');
+images.setAttribute('style', 'width: 250px; height: 250px;');
+images.removeAttribute('src'); // remove attribute
 
-// Directly accessing the property
-const altAttribute = image.alt;
-console.log(altAttribute);
+
