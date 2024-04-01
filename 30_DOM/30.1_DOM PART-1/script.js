@@ -398,23 +398,24 @@ image.setAttribute('style', 'width: 250px; height: 250px;');
 
 // --------------------------Attribute----------------------------
 
+const att = document.getElementById('att');
+att.attributes[1].value = 'aaa'
+att.attributes[2].value = 'width: 250px; height: 250px;'
+//remove example
+const atta = document.getElementById('attt');
+atta.attributes[1].value = 'aaa'
+atta.attributes[2].value = 'width: 250px; height: 250px;'
+document.getElementById('attt').removeAttribute("style"); // remove style
 
+// ---------Checking Attribute Existence:-----------
 
-
-
-
-
-
-
-// Checking Attribute Existence:
 // You can check if an attribute exists using the hasAttribute() method.
-
 
 const hasSrcAttribute = image.hasAttribute('src');
 console.log(hasSrcAttribute); // Output: true
 
+// -------------Removing Attributes-----------------
 
-// Removing Attributes:
 // You can remove attributes using the removeAttribute() method.
 
 const images = document.getElementById('myImages');
