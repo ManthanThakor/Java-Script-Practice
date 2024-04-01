@@ -65,39 +65,19 @@ function myFunction() {
   }
 }
 
-/* .className:
-.className is a property of DOM elements that represents the value of the class attribute of an element as a single string. You can use .className to get or set the classes of an element. */
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-// Get the value of the class attribute
-// const classNameValue = element.className;
+/* .classList: https://youtu.be/ykwBHnxP020?si=Pt635Ku3eEQncqNr
 
-// Set the value of the class attribute
-// element.className = 'newClass';
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-/* .classList:
 .classList is a property of DOM elements that returns a collection of the element's classes as a DOMTokenList object. This object provides methods for adding, removing, toggling, and checking the presence of classes. */
-
-// Add a class to the element
-// element.classList.add('newClass');
-
-// Remove a class from the element
-// element.classList.remove('oldClass');
 
 // Toggle a class on the element
 // element.classList.toggle('active');
 
 // Check if the element has a specific class
 // const hasClass = element.classList.contains('className');
-
-/* 
-Key Differences:
-Complexity: .className is a simple string property, while .classList provides a more sophisticated API with methods for class manipulation.
-
-Flexibility: .classList allows you to perform more specific operations like toggling classes or checking if an element has a particular class.
-
-Browser Support: .classList is not supported in older versions of Internet Explorer (prior to IE10), whereas .className is widely supported. */
-
-// class list
 
 // document.querySelector('#dam').classList.add('className');
 
@@ -199,6 +179,12 @@ The second parameter is the function we want to call when the event occurs.
 The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.
 
 Note that you don't use the "on" prefix for the event; use "click" instead of "onclick". */
+
+
+
+
+
+
 
 // =============================================================================
 
@@ -307,7 +293,7 @@ Event Capturing:
 In event capturing (also known as trickling or capturing phase), the event starts from the root element (<html>) and travels down through the DOM hierarchy until it reaches the target element, triggering event handlers along the way. */
 
 
-// Event Bubbling
+// Event Bubbling https://youtu.be/NhRhrAziBRU?si=hZkKSeQT9EvQLo7o
 
 // document.querySelector('#outer').addEventListener('click', e => {
 //    console.log('Outer div is clicked');
@@ -322,7 +308,7 @@ Inner div is clicked
 Outer div is clicked */
 
 
-// Event Capturing
+// Event Capturing  https://youtu.be/NhRhrAziBRU?si=hZkKSeQT9EvQLo7o 
 
 document.querySelector('#outer').addEventListener('click', e => {
    console.log('Outer div is clicked');
@@ -352,3 +338,9 @@ document.querySelector(".containerr").addEventListener("click", (e) => {
 
   alert("container Was clicked")
 })
+
+
+//================================================
+
+// USE CAPTURE
+
