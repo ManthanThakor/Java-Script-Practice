@@ -242,7 +242,6 @@ Note that you don't use the "on" prefix for the event; use "click" instead of "o
  } */
 
  
-
 document.getElementById("btn").addEventListener("click", xxx);
 
 function xxx() {
