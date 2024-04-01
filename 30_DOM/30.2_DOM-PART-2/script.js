@@ -378,5 +378,43 @@ document.querySelector(".containerr").addEventListener("click", (e) => {
 
 //================================================
 
-// USE CAPTURE
+// DOM TRAVERSAL METHODS =================================
+
+
+// JavaScript HTML DOM Navigation
+
+//With the HTML DOM, you can navigate the node tree using node relationships.
+
+/* DOM Nodes
+According to the W3C HTML DOM standard, everything in an HTML document is a node:
+
+The entire document is a document node
+Every HTML element is an element node
+The text inside HTML elements are text nodes
+Every HTML attribute is an attribute node (deprecated)
+All comments are comment nodes */
+
+   /*               A
+                    |
+                    |
+     -----------------------------
+     |     |     |     |     |   |           
+     B     C     D     E     F   G     */
+
+/*   A- parent node
+     B- child node
+     C- child node
+     D- child node
+     E- child node
+     F- child node
+     G- child node
+all children are siblings 
+  if point is D then previous sibling is c and next sibling is E,
+  if point is E then next sibling is F AND previous E sibling
+ */
+
+// - PARENT NODE AND PARENT ELEMENT --------------------------------
+
+
+  
 
