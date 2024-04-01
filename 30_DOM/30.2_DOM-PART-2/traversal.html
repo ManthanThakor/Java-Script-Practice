@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Traversal Methods Example</title>
+<style>
+    .highlight {
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child">Child 1</div>
+        <div class="child">Child 2</div>
+        <div class="child">Child 3</div>
+    </div>
+
+    <script>
+        // Access the parent element
+        const parent = document.getElementById('parent');
+
+        // Example 1: parentNode
+        const firstChild = parent.firstChild;
+        console.log('First child:', firstChild);
+
+        // Example 2: childNodes
+        const childNodes = parent.childNodes;
+        console.log('Child nodes:', childNodes);
+
+        // Example 3: firstChild
+        const firstElement = parent.firstChild;
+        console.log('First element:', firstElement);
+
+        // Example 4: lastChild
+        const lastElement = parent.lastChild;
+        console.log('Last element:', lastElement);
+
+        // Example 5: nextSibling
+        const secondChild = parent.firstChild.nextSibling;
+        console.log('Second child:', secondChild);
+
+        // Example 6: previousSibling
+        const thirdChild = parent.lastChild.previousSibling.previousSibling;
+        console.log('Third child:', thirdChild);
+
+        // Example 7: querySelector
+        const childElement = parent.querySelector('.child');
+        console.log('Child element with class "child":', childElement);
+
+        // Example 8: querySelectorAll
+        const allChildElements = parent.querySelectorAll('.child');
+        console.log('All child elements with class "child":', allChildElements);
+
+        // Example 9: parentNode.childNodes[index]
+        const secondChildNode = parent.childNodes[1];
+        console.log('Second child node:', secondChildNode);
+
+        // Example 10: parentNode.children
+        const childrenElements = parent.children;
+        console.log('Children elements:', childrenElements);
+    </script>
+</body>
+</html>
