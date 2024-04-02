@@ -96,57 +96,55 @@ document.querySelector("#dampp").classList.add("asaa");
 
 // document.querySelector('#dam').classList.remove('className');
 
-  // Select the element with ID "dam" and remove class "className"
-  document.querySelector("#dam").classList.remove("aaa");
+// Select the element with ID "dam" and remove class "className"
+document.querySelector("#dam").classList.remove("aaa");
 
 // document.querySelector('#dam').classList.toggle('className');
 
-const button = document.getElementById('myButtonss');
-const divx = document.getElementById('myDivss');
+const button = document.getElementById("myButtonss");
+const divx = document.getElementById("myDivss");
 
 // Add click event listener to the button
-button.addEventListener('click', function() {
-    // Toggle the "highlight" class on the div
-    divx.classList.toggle('highlight');
+button.addEventListener("click", function () {
+  // Toggle the "highlight" class on the div
+  divx.classList.toggle("highlight");
 });
 
 //=======================
 
 // document.querySelector('#dam').classList.contains('className');
 
-const divAA = document.getElementById('myDivAAAA');
+const divAA = document.getElementById("myDivAAAA");
 
-        // Check if the div has the "highlight" class
-        const hasHighlightClass = divAA.classList.contains('highlight');
-        console.log('Has highlight class:', hasHighlightClass); // Output: true
+// Check if the div has the "highlight" class
+const hasHighlightClass = divAA.classList.contains("highlight");
+console.log("Has highlight class:", hasHighlightClass); // Output: true
 
-        // Check if the div has the "box" class
-        const hasBoxClass = divAA.classList.contains('box');
-        console.log('Has box class:', hasBoxClass); // Output: true
+// Check if the div has the "box" class
+const hasBoxClass = divAA.classList.contains("box");
+console.log("Has box class:", hasBoxClass); // Output: true
 
-        // Check if the div has the "otherClass" class
-        const hasOtherClass = divAA.classList.contains('otherClass');
-        console.log('Has otherClass class:', hasOtherClass); // Output: false
+// Check if the div has the "otherClass" class
+const hasOtherClass = divAA.classList.contains("otherClass");
+console.log("Has otherClass class:", hasOtherClass); // Output: false
 
 //=======================
 
 // document.querySelector('#dam').classList.item(index);
 // document.querySelector('#dam').classList.length;
 
-const diva = document.getElementById('myDivaa');
+const diva = document.getElementById("myDivaa");
 
 // Accessing classList properties
-console.log('Length:', diva.classList.length); // Output: 3
+console.log("Length:", diva.classList.length); // Output: 3
 // Accessing class at index
-console.log('Item at index 0:', diva.classList.item(0)); // Output: class1
-console.log('Item at index 2:', diva.classList.item(2)); // Output: class3
-console.log('Item at index 3:', diva.classList.item(3)); // Output: null
+console.log("Item at index 0:", diva.classList.item(0)); // Output: class1
+console.log("Item at index 2:", diva.classList.item(2)); // Output: class3
+console.log("Item at index 3:", diva.classList.item(3)); // Output: null
 
 //=======================
 
-
 // document.querySelector('#dam').classList.forEach(callback);
-
 
 // =================================================================
 
@@ -216,12 +214,6 @@ The third parameter is a boolean value specifying whether to use event bubbling 
 
 Note that you don't use the "on" prefix for the event; use "click" instead of "onclick". */
 
-
-
-
-
-
-
 // =============================================================================
 
 // Add an Event Handler to an Element
@@ -243,7 +235,6 @@ function as() {
 // SYNTAX  :
 
 // document.getElementById("btn").removeEventListener("click", as);
-
 
 // =======================
 
@@ -270,14 +261,12 @@ div.addEventListener("click", function () {
   div.style.backgroundColor = "red";
 });
 
-
 // --- other methods --------------------------------
 
 var x = document.getElementById("myBtnnnnn");
 x.addEventListener("mouseover", myFunction);
 x.addEventListener("click", mySecondFunction);
 x.addEventListener("mouseout", myThirdFunction);
-
 
 function mySecondFunction() {
   document.getElementById("demmooo").innerHTML += "Clicked!<br>";
@@ -291,9 +280,9 @@ function myThirdFunction() {
 
 // Add keydown event listener
 
-const input = document.getElementById('myInput');
-input.addEventListener('keydown', function(event) {
-    console.log('Key pressed:', event.key);
+const input = document.getElementById("myInput");
+input.addEventListener("keydown", function (event) {
+  console.log("Key pressed:", event.key);
 });
 
 //----------------------------------------------------------------
@@ -304,7 +293,7 @@ input.addEventListener('keydown', function(event) {
 
 let p1 = 5;
 let p2 = 7;
-document.getElementById("buttonpart").addEventListener("click", function() {
+document.getElementById("buttonpart").addEventListener("click", function () {
   myFunction(p1, p2);
 });
 
@@ -312,13 +301,9 @@ function myFunction(a, b) {
   document.getElementById("dkm").innerHTML = a * b;
 }
 
-
-
 // Event Bubbling or Event Capturing?
 
-
-
-//https://youtu.be/CO_DAXswOrc?si=Eg1S7YFFhkSmwGR3&t=731 
+//https://youtu.be/CO_DAXswOrc?si=Eg1S7YFFhkSmwGR3&t=731
 
 /* Event bubbling and event capturing are two phases of event propagation in the Document Object Model (DOM) when an event occurs on an element. Understanding these phases is crucial for handling events effectively in JavaScript.
 
@@ -327,7 +312,6 @@ In event bubbling, the event starts from the target element and bubbles up throu
 
 Event Capturing:
 In event capturing (also known as trickling or capturing phase), the event starts from the root element (<html>) and travels down through the DOM hierarchy until it reaches the target element, triggering event handlers along the way. */
-
 
 // Event Bubbling https://youtu.be/NhRhrAziBRU?si=hZkKSeQT9EvQLo7o
 
@@ -343,43 +327,45 @@ Inner div is clicked
 
 Outer div is clicked */
 
+// Event Capturing  https://youtu.be/NhRhrAziBRU?si=hZkKSeQT9EvQLo7o
 
-// Event Capturing  https://youtu.be/NhRhrAziBRU?si=hZkKSeQT9EvQLo7o 
-
-document.querySelector('#outer').addEventListener('click', e => {
-   console.log('Outer div is clicked');
-}, true);
-document.querySelector('#inner').addEventListener('click', e => {
-   console.log('Inner div is clicked');
-}, true);
+document.querySelector("#outer").addEventListener(
+  "click",
+  (e) => {
+    console.log("Outer div is clicked");
+  },
+  true
+);
+document.querySelector("#inner").addEventListener(
+  "click",
+  (e) => {
+    console.log("Inner div is clicked");
+  },
+  true
+);
 // If you run the above code and click in the inner div, you'll get the log −
 
 // Outer div is clicked
 
 // Inner div is clicked
 
-
-
 document.querySelector(".child").addEventListener("click", (e) => {
-  e.stopPropagation() // stop propagation of click
-  alert("Child Was clicked")
-})
+  e.stopPropagation(); // stop propagation of click
+  alert("Child Was clicked");
+});
 
 document.querySelector(".childContainer").addEventListener("click", (e) => {
-  e.stopPropagation()   
-  alert("childContainer Was clicked")
-})
+  e.stopPropagation();
+  alert("childContainer Was clicked");
+});
 
 document.querySelector(".containerr").addEventListener("click", (e) => {
-
-  alert("container Was clicked")
-})
-
+  alert("container Was clicked");
+});
 
 //================================================
 
 // DOM TRAVERSAL METHODS =================================
-
 
 // JavaScript HTML DOM Navigation
 
@@ -394,7 +380,7 @@ The text inside HTML elements are text nodes
 Every HTML attribute is an attribute node (deprecated)
 All comments are comment nodes */
 
-   /*               A
+/*               A
                     |
                     |
      -----------------------------
@@ -417,8 +403,8 @@ All comments are comment nodes */
 
 // - PARENT NODE AND PARENT ELEMENT --------------------------------
 
-
-document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;
+document.getElementById("id02").innerHTML =
+  document.getElementById("id01").innerHTML;
 
 /* innerHTML
 In this tutorial we use the innerHTML property to retrieve the content of an HTML element.
@@ -433,7 +419,6 @@ document.documentElement - The full document */
 
 /* document.getElementById("demo").innerHTML = document.body.innerHTML; */
 
-
 /* The nodeName Property
 The nodeName property specifies the name of a node.
 
@@ -444,7 +429,6 @@ nodeName of a text node is always #text
 nodeName of the document node is always #documenT */
 
 /* document.getElementById("id02").innerHTML = document.getElementById("id01").nodeName; */
-
 
 /* The nodeValue Property
 The nodeValue property specifies the value of a node.
@@ -470,11 +454,11 @@ document.getElementById("id02").innerHTML = document.getElementById("id01").node
 // https://youtu.be/Pe3sdhA7YME?si=EO5BxC99tMpFCQ4r
 // https://youtu.be/nYr4e4H09MM?si=T78Lyd-wLzfqpHMq
 // https://youtu.be/Fo2QsLDOYlY?si=A_NREsTaZbD3LXFC
-// https://youtu.be/kn1BVQYgEDk?si=bnDPuSMV7cBUfeQE 
+// https://youtu.be/kn1BVQYgEDk?si=bnDPuSMV7cBUfeQE
 
 // https://youtu.be/KwPolbxL8Ps?si=c-3yyEcbiNtxSwu-
 // https://youtu.be/XJU0KdOdwLM?si=dy4pLjD16T0Pqpqq
-// https://youtu.be/1SYUI0uHksM?si=QOartda8ToysUg_5  
+// https://youtu.be/1SYUI0uHksM?si=QOartda8ToysUg_5
 
 /* - Agar kuch find nahi hoga to parent node kuch bhi deta he | parent element undefine dikha dega 
 - children node  Comment SPACE SABKO Target KARTA HE | children only text ko Target KARTA HE 
@@ -482,8 +466,6 @@ document.getElementById("id02").innerHTML = document.getElementById("id01").node
 -  pervious and next siblings space , comment and all bhi count karta he | Next element sibling me space and all nahi count hota next tag ko hi target karega  (*YAHI USE HOTI HE*)  */
 
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-
 
 // ______ DOM CREATE METHODS ______
 
@@ -506,14 +488,13 @@ console.log(newelement2);
 // var newelement3 = document.createComment("just comment");
 // console.log(newelement3);
 
+// =================================================================
 
-// ================================================================= 
-
-// DOM APPEND METHODS 
+// DOM APPEND METHODS
 
 // =================================================================
 
-// - append child 
+// - append child
 
 newelement.appendChild(newelement2);
 console.log(newelement);
@@ -524,13 +505,13 @@ document.getElementById("partapp").appendChild(newelement);
 let target = document.getElementById("partapp");
 target.insertBefore(newelement, target.childNodes[4]);
 
-// append child & insertBefore ONLY APPEND JO PAHLE SE BANA HO |  insertAdjacentElement , insertAdjacentHTML , insertAdjacentText create & append dono karte he 
+// append child & insertBefore ONLY APPEND JO PAHLE SE BANA HO |  insertAdjacentElement , insertAdjacentHTML , insertAdjacentText create & append dono karte he
 
 // =================================================================
 
 // create & append method
 
-// ================================================================= 
+// =================================================================
 
 /* 
  Tag           tag with  TEXT         TEXT
@@ -540,7 +521,6 @@ target.insertBefore(newelement, target.childNodes[4]);
 insert             insert             insert
 Adjacent          AdjaceNT            AdjaceNT
 Element             HTML               text     */
-
 
 // DOM insertAdjacent Position
 
@@ -557,7 +537,7 @@ var newel = document.createElement("h1");
 console.log(newel);
 
 var newel2 = document.createTextNode("THIS IS JUST TEXT TWOOOOOOO, ENJOY");
-console.log(newel2); 
+console.log(newel2);
 
 newel.appendChild(newel2);
 
@@ -567,19 +547,20 @@ target3.insertAdjacentElement("beforebegin", newel);
 // - insertAdjacentText (*** more usable ****)
 
 let target4 = document.getElementById("oto");
-let target5 = "<div><h2>HIS IS JUST TEXT THREEEEEEEEEEEEEEEEEEEEE, ENJOY</h2></div>"
+let target5 =
+  "<div><h2>HIS IS JUST TEXT THREEEEEEEEEEEEEEEEEEEEE, ENJOY</h2></div>";
 target4.insertAdjacentHTML("afterbegin", target5);
-
 
 // - insertAdjacenttext
 
 let target6 = document.getElementById("oto");
-let target7 = "sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss THREEEEEEEEEEEEEEEEEEEEE, ENJOY"
+let target7 =
+  "sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss THREEEEEEEEEEEEEEEEEEEEE, ENJOY";
 target6.insertAdjacentText("afterend", target7);
 
 // =================================================================
 
-// DOM replaceChild & removeChild 
+// DOM replaceChild & removeChild
 
 // https://youtu.be/x7sKDeL7SrA?si=F6X18T6PCKs3kyQF
 
@@ -601,45 +582,70 @@ parentNode.removeChild(nodeToRemove);
 
  */
 
-const parent = document.getElementById('parent');
-        const newChild = document.createElement('div');
-        newChild.textContent = 'New Child';
+const parent = document.getElementById("parent");
+const newChild = document.createElement("div");
+newChild.textContent = "New Child";
 
-        // Replace child2 with newChild
-        const oldChild = document.getElementById('child2');
-        parent.replaceChild(newChild, oldChild);
+// Replace child2 with newChild
+const oldChild = document.getElementById("child2");
+parent.replaceChild(newChild, oldChild);
 
-        // Remove child3
-        const childToRemove = document.getElementById('child3');
-        parent.removeChild(childToRemove);
+// Remove child3
+const childToRemove = document.getElementById("child3");
+parent.removeChild(childToRemove);
 
 // =================================================================
-
 
 // CLONE
 
-// https://youtu.be/xwpGrNTP_oo?si=omXSCJLA7KV980ms 
+// https://youtu.be/xwpGrNTP_oo?si=omXSCJLA7KV980ms
 // =================================================================
 
+// Get the original node
+var originalNode = document.getElementById("original");
 
-  // Get the original node
-  var originalNode = document.getElementById('original');
+// Clone the node without its descendants
+var clonedNodeWithoutDescendants = originalNode.cloneNode(false);
 
-  // Clone the node without its descendants
-  var clonedNodeWithoutDescendants = originalNode.cloneNode(false);
+// Clone the node with its descendants
+var clonedNodeWithDescendants = originalNode.cloneNode(true);
 
-  // Clone the node with its descendants
-  var clonedNodeWithDescendants = originalNode.cloneNode(true);
+// Modify the cloned node
+clonedNodeWithDescendants.querySelector("p").textContent =
+  "This is the cloned paragraph.";
 
-  // Modify the cloned node
-  clonedNodeWithDescendants.querySelector('p').textContent = 'This is the cloned paragraph.';
+// Append cloned nodes to the document
+document.getElementById("original").appendChild(clonedNodeWithoutDescendants);
+document.getElementById("original").appendChild(clonedNodeWithDescendants);
 
-  // Append cloned nodes to the document
-  document.getElementById("original").appendChild(clonedNodeWithoutDescendants);
-  document.getElementById("original").appendChild(clonedNodeWithDescendants);
-
-  // // Remove the cloned nodes
-  // document.body.removeChild(clonedNodeWithoutDescendants);
-  // document.body.removeChild(clonedNodeWithDescendants);
+// // Remove the cloned nodes
+// document.body.removeChild(clonedNodeWithoutDescendants);
+// document.body.removeChild(clonedNodeWithDescendants);
 
 // =================================================================
+
+// JavaScript hasAttribute & hasChildNodes Tutorial in Hindi
+
+// =================================================================
+
+/* hasAttribute()
+
+The hasAttribute() method is used to check whether an element has a specific attribute or not. It returns true if the specified attribute exists on the element, otherwise it returns false. */
+
+// element.hasAttribute(attributeName);
+
+
+const divaaa = document.getElementById("myDivsa");
+const hasTitleAttribute = divaaa.hasAttribute("title");
+console.log("Does the div have a title attribute?", hasTitleAttribute); // Output: true
+
+//  hasChildNodes()
+
+//  The hasChildNodes() method is used to check whether an element has any child nodes or not. It returns true if the element has one or more child nodes, otherwise it returns false.
+
+// element.hasChildNodes();
+
+
+const parent11 = document.getElementById('parentaa');
+const hasChildNodes = parent11.hasChildNodes();
+console.log('Does the parent have child nodes?', hasChildNodes); // Output: true
