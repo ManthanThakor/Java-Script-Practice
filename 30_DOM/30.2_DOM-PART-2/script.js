@@ -564,8 +564,43 @@ newel.appendChild(newel2);
 let target3 = document.getElementById("oto");
 target3.insertAdjacentElement("beforebegin", newel);
 
-// - insertAdjacentText
+// - insertAdjacentText (*** more usable ****)
 
 let target4 = document.getElementById("oto");
-target4.insertAdjacentText("afterbegin", "THIS IS JUST TEXT TWOOOOOOO, ENJOY");
+let target5 = "<div><h2>HIS IS JUST TEXT THREEEEEEEEEEEEEEEEEEEEE, ENJOY</h2></div>"
+target4.insertAdjacentHTML("afterbegin", target5);
+
+
+// - insertAdjacenttext
+
+let target6 = document.getElementById("oto");
+let target7 = "sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss THREEEEEEEEEEEEEEEEEEEEE, ENJOY"
+target6.insertAdjacentText("afterend", target7);
+
+// =================================================================
+
+// DOM replaceChild & removeChild 
+
+// https://youtu.be/x7sKDeL7SrA?si=F6X18T6PCKs3kyQF
+
+// =================================================================
+
+/* replaceChild():
+The replaceChild() method replaces a child node of a specified parent node with a new node. It takes two parameters: the new node to be inserted, and the existing node to be replaced.
+
+Syntax:
+parentNode.replaceChild(newNode, oldNode);
+
+
+
+removeChild():
+The removeChild() method removes a specified child node from its parent node.
+
+Syntax:
+parentNode.removeChild(nodeToRemove);
+
+ */
+
+
+// =================================================================
 
