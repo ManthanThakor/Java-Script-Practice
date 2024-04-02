@@ -532,6 +532,25 @@ target.insertBefore(newelement, target.childNodes[0]);
 
 // ================================================================= 
 
+/* 
+ Tag           tag with  TEXT         TEXT
+  |                  |                  |
+<p></p>   <p>THIS IS JUST TEXT</p>  THIS IS TEXT
+  |                  |                  |
+insert             insert             insert
+Adjacent          AdjaceNT            AdjaceNT
+Element             HTML               text     */
+
+
+// DOM insertAdjacent Position
+
+/* 
+  - beforebegin
+  - afterbegin
+  - beforeend
+  - afterend
+ */
+
 // - insertAdjacentElement
 
 let target2 = document.getElementById("partapp");
