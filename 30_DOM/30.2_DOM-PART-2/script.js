@@ -475,6 +475,14 @@ document.getElementById("id02").innerHTML = document.getElementById("id01").node
 /* - Agar kuch find nahi hoga to parent node kuch bhi deta he | parent element undefine dikha dega 
 - children node  Comment SPACE SABKO Target KARTA HE | children only text ko Target KARTA HE 
 - FIRST CHILD TEXT NODE  SPACE Comment SAB KO TARGET KAREGA | FIRST Element CHILD PAHLE JO TAG AA RAAHA HOGA USE TARGET KAREGA (*YAHI USE HOTI HE*)
--  */
+-  pervious and next siblings space , comment and all bhi count karta he | Next element sibling me space and all nahi count hota next tag ko hi target karega  (*YAHI USE HOTI HE*)  */
 
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+// ______ DOM CREATE METHODS ______
+
+// - createTextNode
+// - createElement
+// - createComment
