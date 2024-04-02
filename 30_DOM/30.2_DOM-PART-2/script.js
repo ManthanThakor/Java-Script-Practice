@@ -601,6 +601,17 @@ parentNode.removeChild(nodeToRemove);
 
  */
 
+const parent = document.getElementById('parent');
+        const newChild = document.createElement('div');
+        newChild.textContent = 'New Child';
+
+        // Replace child2 with newChild
+        const oldChild = document.getElementById('child2');
+        parent.replaceChild(newChild, oldChild);
+
+        // Remove child3
+        const childToRemove = document.getElementById('child3');
+        parent.removeChild(childToRemove);
 
 // =================================================================
 
