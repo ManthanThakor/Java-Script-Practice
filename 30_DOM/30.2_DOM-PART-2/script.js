@@ -471,7 +471,10 @@ document.getElementById("id02").innerHTML = document.getElementById("id01").node
 // https://youtu.be/nYr4e4H09MM?si=T78Lyd-wLzfqpHMq
 // https://youtu.be/Fo2QsLDOYlY?si=A_NREsTaZbD3LXFC
 // https://youtu.be/kn1BVQYgEDk?si=bnDPuSMV7cBUfeQE 
-// https://youtu.be/KwPolbxL8Ps?si=c-3yyEcbiNtxSwu- 
+
+// https://youtu.be/KwPolbxL8Ps?si=c-3yyEcbiNtxSwu-
+// https://youtu.be/XJU0KdOdwLM?si=dy4pLjD16T0Pqpqq
+// https://youtu.be/1SYUI0uHksM?si=QOartda8ToysUg_5  
 
 /* - Agar kuch find nahi hoga to parent node kuch bhi deta he | parent element undefine dikha dega 
 - children node  Comment SPACE SABKO Target KARTA HE | children only text ko Target KARTA HE 
@@ -497,5 +500,39 @@ createElement   createTextNode     createComment */
 var newelement = document.createElement("h2");
 console.log(newelement);
 
-var newelement2 = document.createTextNode("this is just text");
+var newelement2 = document.createTextNode("THIS IS JUST TEXT ENJOY");
 console.log(newelement2);
+
+// var newelement3 = document.createComment("just comment");
+// console.log(newelement3);
+
+
+// ================================================================= 
+
+// DOM APPEND METHODS 
+
+// =================================================================
+
+// - append child 
+
+newelement.appendChild(newelement2);
+console.log(newelement);
+document.getElementById("partapp").appendChild(newelement);
+
+// - insertBefore
+
+let target = document.getElementById("partapp");
+target.insertBefore(newelement, target.childNodes[0]);
+
+// append child & insertBefore ONLY APPEND JO PAHLE SE BANA HO |  insertAdjacentElement , insertAdjacentHTML , insertAdjacentText create & append dono karte he 
+
+// =================================================================
+
+// create & append method
+
+// ================================================================= 
+
+// - insertAdjacentElement
+
+let target2 = document.getElementById("partapp");
+target2.insertAdjacentElement("beforebegin", newelement);
