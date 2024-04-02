@@ -522,7 +522,7 @@ document.getElementById("partapp").appendChild(newelement);
 // - insertBefore
 
 let target = document.getElementById("partapp");
-target.insertBefore(newelement, target.childNodes[0]);
+target.insertBefore(newelement, target.childNodes[4]);
 
 // append child & insertBefore ONLY APPEND JO PAHLE SE BANA HO |  insertAdjacentElement , insertAdjacentHTML , insertAdjacentText create & append dono karte he 
 
@@ -553,5 +553,19 @@ Element             HTML               text     */
 
 // - insertAdjacentElement
 
-let target2 = document.getElementById("partapp");
-target2.insertAdjacentElement("beforebegin", newelement);
+var newel = document.createElement("h1");
+console.log(newel);
+
+var newel2 = document.createTextNode("THIS IS JUST TEXT TWOOOOOOO, ENJOY");
+console.log(newel2); 
+
+newel.appendChild(newel2);
+
+let target3 = document.getElementById("oto");
+target3.insertAdjacentElement("beforebegin", newel);
+
+// - insertAdjacentText
+
+let target4 = document.getElementById("oto");
+target4.insertAdjacentText("afterbegin", "THIS IS JUST TEXT TWOOOOOOO, ENJOY");
+
