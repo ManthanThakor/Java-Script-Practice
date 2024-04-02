@@ -615,3 +615,31 @@ const parent = document.getElementById('parent');
 
 // =================================================================
 
+
+// CLONE
+
+// https://youtu.be/xwpGrNTP_oo?si=omXSCJLA7KV980ms 
+// =================================================================
+
+
+  // Get the original node
+  var originalNode = document.getElementById('original');
+
+  // Clone the node without its descendants
+  var clonedNodeWithoutDescendants = originalNode.cloneNode(false);
+
+  // Clone the node with its descendants
+  var clonedNodeWithDescendants = originalNode.cloneNode(true);
+
+  // Modify the cloned node
+  clonedNodeWithDescendants.querySelector('p').textContent = 'This is the cloned paragraph.';
+
+  // Append cloned nodes to the document
+  document.getElementById("original").appendChild(clonedNodeWithoutDescendants);
+  document.getElementById("original").appendChild(clonedNodeWithDescendants);
+
+  // // Remove the cloned nodes
+  // document.body.removeChild(clonedNodeWithoutDescendants);
+  // document.body.removeChild(clonedNodeWithDescendants);
+
+// =================================================================
